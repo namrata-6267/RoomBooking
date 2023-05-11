@@ -252,7 +252,7 @@
             DatePicker1 As datepicker:
                 Height: =35
                 OnSelect: |-
-                    =UpdateContext({StartDateVar:Text(DatePicker1.SelectedDate,"dd-mmm-yyyy") & "  " & TimePicker1.Selected.Value})
+                    =UpdateContext({StartDateVar:Text(DatePicker1.SelectedDate, "dd-mmm-yyyy") & "  " & TimePicker1.Selected.Value})
                 Width: =150
                 X: =30
                 Y: =114
