@@ -7228,6 +7228,36 @@
           },
           "ruleId": "app-UnusedVariables",
           "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Request_1'.EndDateCheck"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Request_1'.EndDateCheck",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "EndDateCheck",
+                "module": "New Request_1",
+                "type": "'New Request_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 12
         }
       ],
       "tool": {
