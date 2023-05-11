@@ -17,6 +17,9 @@
           "Bookings": {
             "tableName": "ba9b1872-9492-4eb4-83da-99c720294bf6"
           },
+          "Bookings1": {
+            "tableName": "c6cfafd5-c892-45d2-905d-509d52b29805"
+          },
           "EmployeesData": {
             "tableName": "bca58180-d7c1-465c-924e-fed17669226c"
           },
@@ -50,7 +53,8 @@
       "Bookings",
       "EmployeesData_1",
       "RoomsAvailable_1",
-      "Rooms_Available"
+      "Rooms_Available",
+      "Bookings1"
     ],
     "dependencies": {},
     "dependents": [],
