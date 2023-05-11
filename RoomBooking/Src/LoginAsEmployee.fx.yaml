@@ -1,0 +1,70 @@
+LoginAsEmployee As screen:
+
+    Label1 As label:
+        Color: =RGBA(109, 49, 162, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =118
+        Size: =50
+        Text: ="Login as Employee"
+        Width: =630
+        X: =85
+        Y: =46
+        ZIndex: =1
+
+    Label7 As label:
+        Height: =81
+        Size: =15
+        Text: ="Forgot Password?Contact Admin"
+        Visible: =ShowForgetMessage
+        Width: =384
+        X: =786
+        Y: =534
+        ZIndex: =4
+
+    Button2 As button:
+        BorderThickness: =3
+        Fill: =RGBA(109, 49, 162, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =84
+        HoverColor: =RGBA(109, 49, 162, 1)
+        HoverFill: =ColorFade(RGBA(252, 103, 213, 0.66), -20%)
+        OnSelect: |-
+            =If(!IsBlank(LookUp(Table1,Title=TextInput1.Text And Password=TextInput2.Text).Title),Navigate('My Room_Request'),UpdateContext({ShowForgetMessage:true}))
+        Size: =20
+        Text: ="Login"
+        Width: =336
+        X: =209
+        Y: =563
+        ZIndex: =5
+
+    TextInput1 As text:
+        BorderColor: =RGBA(109, 49, 162, 1)
+        Default: =""
+        Height: =90
+        HintText: ="UserName"
+        Size: =20
+        Width: =550
+        X: =102
+        Y: =246
+        ZIndex: =6
+
+    TextInput2 As text:
+        BorderColor: =RGBA(109, 49, 162, 1)
+        Default: =""
+        Height: =90
+        HintText: ="Password"
+        Mode: =TextMode.Password
+        Size: =20
+        Width: =550
+        X: =102
+        Y: =413
+        ZIndex: =7
+
+    Image3 As image:
+        Height: =667
+        Image: ='2700_R1NUIEpPUyAwMDktMjc'
+        Width: =643
+        X: =722
+        Y: =97
+        ZIndex: =8
+

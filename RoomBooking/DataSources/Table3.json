@@ -1,0 +1,19 @@
+[
+  {
+    "Data": "[]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "Table3",
+    "OrderedColumnNames": [
+      "Select Room",
+      "StartTime",
+      "EndTime",
+      "DatePickerReason"
+    ],
+    "OriginalName": "Table3",
+    "OriginalSchema": "*[DatePickerReason:s, EndTime:s, 'Select Room':s, StartTime:s]",
+    "Schema": "*[DatePickerReason:s, EndTime:s, 'Select Room':s, StartTime:s]",
+    "Token": "dummyToken",
+    "Type": "StaticDataSourceInfo"
+  }
+]

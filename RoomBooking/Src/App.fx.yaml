@@ -1,0 +1,46 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =ClearCollect(
+            NavFacilityView,
+             {
+                    Title: "Rooms Waiting For Action",
+                    TargetScreen: 'Rooms Waiting For Action'
+                },
+                 {
+                    Title: "Rooms Available",
+                    TargetScreen: RoomsAvailable
+                },
+        
+                
+            
+                
+                {
+                    Title: "LogOut",
+                    TargetScreen: Home
+                }
+            );
+             ClearCollect(
+            NavEmployeeView,
+            
+                {
+                    Title: "Room Request",
+                    TargetScreen: 'My Room_Request'
+                },
+                {
+                    Title: "Rooms Available",
+                    TargetScreen: RoomsAvailable
+                },
+                {
+                    Title: "LogOut",
+                    TargetScreen: Home
+                }
+            )
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
