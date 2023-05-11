@@ -1,0 +1,105 @@
+{
+  "24f74981-9290-4baa-b507-daa2983a4ef4": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1627/1.0.1627.3238/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://3bn1xh.sharepoint.com/sites/Room_Booking": {
+        "dataSources": {
+          "AllRooms": {
+            "tableName": "a0e5ab63-5a96-453a-9059-387cb85708ea"
+          },
+          "Bookings": {
+            "tableName": "ba9b1872-9492-4eb4-83da-99c720294bf6"
+          },
+          "EmployeesData": {
+            "tableName": "bca58180-d7c1-465c-924e-fed17669226c"
+          },
+          "EmployeesData_1": {
+            "tableName": "bca58180-d7c1-465c-924e-fed17669226c"
+          },
+          "Rooms_Available": {
+            "tableName": "69d3eef8-8a91-474f-bde7-a76f3da77066"
+          },
+          "RoomsAvailable_1": {
+            "tableName": "e3f27f60-316d-4625-8d7e-656533c299dd"
+          },
+          "Table1": {
+            "tableName": "3f7d542e-4448-449f-8c69-e4b2d6e26401"
+          }
+        }
+      },
+      "https://3bn1xh.sharepoint.com/sites/Table1": {
+        "dataSources": {
+          "AdminCredentialList": {
+            "tableName": "c58dac19-8808-4a6f-af2f-dd1123d68a1f"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "AdminCredentialList",
+      "Table1",
+      "AllRooms",
+      "EmployeesData",
+      "Bookings",
+      "EmployeesData_1",
+      "RoomsAvailable_1",
+      "Rooms_Available"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "24f74981-9290-4baa-b507-daa2983a4ef4"
+  },
+  "b120d2bb-c240-493f-9978-9cc320cbd491": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1627/1.0.1627.3238/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://3bn1xh.sharepoint.com/sites/Room_Booking": {
+        "dataSources": {
+          "RoomRequestedByEmployee": {
+            "tableName": "8ed4f231-fe7f-4dbd-b9b6-a73c7dd9da07"
+          },
+          "RoomRequestedByEmployee  - Copy": {
+            "tableName": "6aaf18a4-3c7a-4298-a07e-9806e997a791"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "RoomRequestedByEmployee",
+      "RoomRequestedByEmployee  - Copy"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "b120d2bb-c240-493f-9978-9cc320cbd491"
+  },
+  "f334572f-d142-49e0-8dbd-13386774c5fc": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1626/1.0.1626.3238/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f334572f-d142-49e0-8dbd-13386774c5fc"
+  }
+}

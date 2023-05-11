@@ -1,0 +1,97 @@
+Home As screen:
+
+    RoomImageContainer1_1 As groupContainer.manualLayoutContainer:
+        BorderThickness: =3
+        Height: =768
+        Width: =1366
+        ZIndex: =1
+
+        Image1_1 As image:
+            BorderColor: =RGBA(56, 96, 178, 1)
+            BorderStyle: =BorderStyle.None
+            Height: =550
+            Image: ='16570'
+            ImagePosition: =ImagePosition.Fill
+            Width: =791
+            X: =18
+            Y: =208
+            ZIndex: =1
+
+        Label14_2 As label:
+            Color: =RGBA(109, 49, 162, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =184
+            Size: =50
+            Text: ="Room Booking App"
+            Width: =709
+            X: =377
+            Y: =24
+            ZIndex: =2
+
+        Button1_1 As button:
+            BorderThickness: =3
+            Fill: =RGBA(109, 49, 162, 1)
+            Font: =Font.'Segoe UI'
+            Height: =70
+            HoverColor: =RGBA(109, 49, 162, 1)
+            HoverFill: =ColorFade(RGBA(253, 103, 213, 0.66), -20%)
+            OnSelect: |-
+                =Set(FacilityView,false);
+                Navigate(LoginAsEmployee)
+            Size: =20
+            Text: ="Login as Employee"
+            Width: =300
+            X: =937
+            Y: =341
+            ZIndex: =3
+
+        Button5_1 As button:
+            BorderThickness: =3
+            Fill: =RGBA(109, 49, 162, 1)
+            Font: =Font.'Segoe UI'
+            Height: =70
+            HoverColor: =RGBA(109, 49, 162, 1)
+            HoverFill: =ColorFade(RGBA(253, 103, 213, 0.66), -20%)
+            OnSelect: |-
+                =Set(FacilityView,true);
+                
+                Navigate(LoginAsManager)
+            Size: =20
+            Text: ="Login as Manager"
+            Width: =300
+            X: =937
+            Y: =559
+            ZIndex: =4
+
+        Label16_1 As label:
+            Color: =RGBA(109, 49, 162, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =94
+            Size: =23
+            Text: ="  Request a Room"
+            Width: =340
+            X: =937
+            Y: =232
+            ZIndex: =5
+
+        Label18_1 As label:
+            Color: =RGBA(109, 49, 162, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =84
+            Size: =23
+            Text: ="   Approve or Decline Room Request"
+            Width: =557
+            X: =809
+            Y: =457
+            ZIndex: =6
+
+    Image2_1 As image:
+        Height: =114
+        Image: =logo
+        Width: =211
+        X: =152
+        Y: =66
+        ZIndex: =3
+

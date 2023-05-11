@@ -1,0 +1,20 @@
+LogOut As screen:
+
+    Header_3 As Header:
+        Width: =1365
+
+    Navigation_3 As Navigation:
+        CurrentScreen: ="LogOut"
+        NavItem: |
+            =Table({Title: "Room Request", TargetScreen : 'My Room_Request'},
+            {Title: "Rooms Available", TargetScreen : RoomsAvailable},
+            {Title: "LogOut", TargetScreen : Home })
+        Y: =96
+        ZIndex: =2
+
+    Label15_1 As label:
+        Text: ="LogOut"
+        X: =326
+        Y: =246
+        ZIndex: =3
+
