@@ -41,7 +41,7 @@
             "Name": "galleryTemplate1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 284,
+            "PublishOrderIndex": 280,
             "Rules": [
               {
                 "Category": "Design",
@@ -151,7 +151,7 @@
             "Name": "Label11",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 285,
+            "PublishOrderIndex": 281,
             "Rules": [
               {
                 "Category": "Data",
@@ -479,7 +479,7 @@
         "Name": "Gallery1",
         "Parent": "Navigation",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 283,
+        "PublishOrderIndex": 279,
         "Rules": [
           {
             "Category": "Data",
@@ -687,12 +687,12 @@
       },
       "CurrentScreen"
     ],
-    "LastModifiedTimestamp": "638193848495399285",
+    "LastModifiedTimestamp": "638194757663607261",
     "Name": "Navigation",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "Table({Title: \"Room Request\", TargetScreen : App.ActiveScreen},{Title: \"Rooms Available\", TargetScreen : App.ActiveScreen},{Title: \"LogOut\", TargetScreen : App.ActiveScreen})",
+        "InvariantScript": "Table({Title: \"Room Request\", TargetScreen : App.ActiveScreen},{Title: \"Rooms Available\", TargetScreen : App.ActiveScreen},{Title: \"LogOut\", TargetScreen : App.ActiveScreen},{Title: \"About\", TargetScreen : App.ActiveScreen})",
         "Property": "NavItem",
         "RuleProviderType": "System"
       },
@@ -777,7 +777,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638193848495399285",
+  "LastModifiedTimestamp": "638194757663607261",
   "Name": "99b28883848845418997e0e1384ff668",
   "OverridableProperties": {},
   "Version": "638190383886042173"

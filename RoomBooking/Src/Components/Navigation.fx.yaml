@@ -8,7 +8,7 @@ Navigation As CanvasComponent:
         
         
     NavItem: |-
-        =Table({Title: "Room Request", TargetScreen : App.ActiveScreen},{Title: "Rooms Available", TargetScreen : App.ActiveScreen},{Title: "LogOut", TargetScreen : App.ActiveScreen})
+        =Table({Title: "Room Request", TargetScreen : App.ActiveScreen},{Title: "Rooms Available", TargetScreen : App.ActiveScreen},{Title: "LogOut", TargetScreen : App.ActiveScreen},{Title: "About", TargetScreen : App.ActiveScreen})
     Width: |+
         =Max(App.Height,App.MinScreenHeight)/5
         

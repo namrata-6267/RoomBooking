@@ -33,6 +33,7 @@
       "ID": "ID",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
+      "RoomDescription": "RoomDescription",
       "Title": "Rooms"
     },
     "DatasetName": "https://3bn1xh.sharepoint.com/sites/Room_Booking",

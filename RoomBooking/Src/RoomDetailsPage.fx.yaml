@@ -1,0 +1,64 @@
+RoomDetailsPage As screen:
+
+    Label9 As label:
+        Color: =RGBA(168, 0, 0, 1)
+        Height: =59
+        Size: =20
+        Text: ="Here are the information of all rooms"
+        Width: =1079
+        X: =176
+        Y: =134
+        ZIndex: =1
+
+    "Gallery4 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver4.0'":
+        DelayItemLoading: =true
+        Height: =289
+        Items: =Rooms_Available
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =Min(128, Self.Height - 60)
+        Width: =1212
+        WrapCount: =3
+        X: =154
+        Y: =258
+        ZIndex: =1
+
+        Image5 As image:
+            Height: =96
+            OnSelect: =Select(Parent)
+            Width: =96
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Separator4 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        Button5 As button:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Rooms
+            X: =145
+            Y: =44
+            ZIndex: =5
+
+    Label12 As label:
+        Height: =64
+        Size: =20
+        Text: =Gallery4.Selected.RoomDescription
+        Width: =1092
+        X: =224
+        Y: =564
+        ZIndex: =2
+
+    Header_10 As Header:
+        ZIndex: =3
+
+    Navigation_10 As Navigation:
+        Y: =96
+        ZIndex: =4
+

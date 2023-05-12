@@ -113,7 +113,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Room_Booking",
     "OriginatingVersion": "1.330",
-    "ParserErrorCount": 3
+    "ParserErrorCount": 0
   },
   "PublishInfo": {
     "AppName": "Room_Booking",
@@ -128,7 +128,6 @@
   },
   "ScreenOrder": [
     "Main Screen",
-    "Room Select Screen",
     "Meeting Screen",
     "Confirmation Screen",
     "LoginAsEmployee",
@@ -143,6 +142,7 @@
     "LogOut",
     "New Request",
     "New Request_1",
-    "Rooms Waiting For Action"
+    "Rooms Waiting For Action",
+    "RoomDetailsPage"
   ]
 }

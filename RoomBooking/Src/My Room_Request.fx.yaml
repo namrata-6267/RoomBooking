@@ -157,7 +157,7 @@
         DelayItemLoading: =true
         Height: =128
         Items: |-
-            =Table({Filter:"All"},{Filter:"Approved"},{Filter:"Pending"},{Filter:"Declined"})
+            =Table({Filter:"All"},{Filter:"Approved"},{Filter:"Pending"},{Filter:"Completed"})
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
@@ -179,8 +179,8 @@
                 If(ThisItem.Filter="Approved",
                 ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Approved")));
                 
-                If(ThisItem.Filter="Declined",
-                ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Declined")));
+                If(ThisItem.Filter="Completed",
+                ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Completed")));
                 
                 If(ThisItem.Filter="Pending",
                 ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Pending")));
