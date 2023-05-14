@@ -33,8 +33,8 @@
         Size: =20
         Text: ="Submit"
         Width: =354
-        X: =732
-        Y: =651
+        X: =752
+        Y: =715
         ZIndex: =5
 
     EditForm_2 As form:
@@ -512,7 +512,7 @@
             =//ClearCollect(Bookings,Filter(Rooms,
             //DataCardKey4_1=DataCardValue4_1))
             
-            ClearCollect(BookingDetails,Filter(Bookings1,StartDateTime= StartDateVar))
+            ClearCollect(Booking1,Filter(Bookings1,StartDateTime= StartDateVar))
         Visible: |+
             =true
             

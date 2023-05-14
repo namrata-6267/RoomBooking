@@ -284,6 +284,7 @@
         OnSelect: |-
             =ClearCollect(TotalRooms,Office365Outlook.GetRoomsV2().value);
             Set(AllRoomsAddress,Concat(TotalRooms,address & ","));
+            ClearCollect(FreeSlots,Office365Outlook.FindMeetingTimesV2({RequiredAttendees:AllRoomsAddress,IsOrganizerOptional:true,Start:StartDateTimeUTC,End:EndDateTimeUTC,MeetingDuration:DateDiff(StartDateTimeUTC,EndDateTimeUTC,TimeUnit.Minutes)}));
         Text: ="Find Rooms"
         X: =718
         Y: =357
