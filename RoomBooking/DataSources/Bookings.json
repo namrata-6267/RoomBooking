@@ -37,6 +37,7 @@
       "Reason": "Reason",
       "RequestedBy": "RequestedBy",
       "RequestedTo": "Requested To",
+      "RoomDescription": "RoomDescription",
       "SelectRoom": "SelectedRoom",
       "StartTime": "Start Time",
       "Status": "Status",
