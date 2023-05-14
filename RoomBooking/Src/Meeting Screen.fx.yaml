@@ -281,8 +281,9 @@
         ZIndex: =21
 
     Button8 As button:
-        OnSelect: |
+        OnSelect: |-
             =ClearCollect(TotalRooms,Office365Outlook.GetRoomsV2().value);
+            Set(AllRoomsAddress,Concat(TotalRooms,address & ","));
         Text: ="Find Rooms"
         X: =718
         Y: =357
