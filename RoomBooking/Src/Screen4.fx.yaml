@@ -4,7 +4,7 @@ Screen4 As screen:
         
         Set(AllRoomsAddress,Concat(AllRooms,address & ";"));
         
-        ClearCollect(FreeSlots,Office365Outlook.FindMeetingTimesV2({RequiredAttendees:AllRoomsAddress,IsOrganizerOptional:true,Start:StartDateTimeUTC,End:EndDateTimeUTC,MeetingDuration:DateDiff(StartDateTimeUTC,EndDateTimeUTC,TimeUnit.Minutes)}));
+        ClearCollect(FreeSlots,Office365Outlook.FindMeetingTimesV2({RequiredAttendees:AllRoomsAddress,IsOrganizerOptional:true,Start:StartDateTimeUTC,End:EndDateTimeUTC,MeetingDuration:DateDiff(StartDateTime,EndDateTime,TimeUnit.Minutes)}));
         
         
 
