@@ -5652,10 +5652,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 11,
-                  "charOffset": 78,
+                  "charLength": 8,
+                  "charOffset": 104,
                   "snippet": {
-                    "text": "ddStartTime"
+                    "text": ".minutes"
                   }
                 }
               },
@@ -5668,7 +5668,7 @@
           ],
           "message": {
             "arguments": [
-              "ddStartTime"
+              "minutes"
             ],
             "id": "issue"
           },
@@ -5692,10 +5692,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 13,
-                  "charOffset": 89,
+                  "charLength": 72,
+                  "charOffset": 58,
                   "snippet": {
-                    "text": ".SelectedText"
+                    "text": "DateAdd(_dateSelected,ddStartTime.SelectedText.minutes,TimeUnit.Minutes)"
                   }
                 }
               },
@@ -5707,13 +5707,16 @@
             }
           ],
           "message": {
+            "arguments": [
+              "DateAdd"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5730,7 +5733,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 102,
+                  "charOffset": 194,
                   "snippet": {
                     "text": ".minutes"
                   }
@@ -5744,13 +5747,16 @@
             }
           ],
           "message": {
+            "arguments": [
+              "minutes"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -5766,10 +5772,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 73,
-                  "charOffset": 56,
+                  "charLength": 70,
+                  "charOffset": 150,
                   "snippet": {
-                    "text": "DateAdd(_dateSelected,ddStartTime.SelectedText.minutes ,TimeUnit.Minutes)"
+                    "text": "DateAdd(_dateSelected,ddEndTime.SelectedText.minutes,TimeUnit.Minutes)"
                   }
                 }
               },
@@ -8915,19 +8921,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Meeting Screen'.Dropdown3.AccessibleLabel"
+                  "fullyQualifiedName": "'Meeting Screen'.ddStartTime.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Meeting Screen'.Dropdown3.AccessibleLabel",
+                  "fullyQualifiedName": "'Meeting Screen'.ddStartTime.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Meeting Screen",
-                "type": "'Meeting Screen'.Dropdown3"
+                "type": "'Meeting Screen'.ddStartTime"
               }
             }
           ],
