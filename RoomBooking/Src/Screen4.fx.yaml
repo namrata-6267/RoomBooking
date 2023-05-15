@@ -5,31 +5,30 @@ Screen4 As screen:
         
         
 
-    Gallery14_1 As gallery.galleryHorizontal:
+    Gallery15 As gallery.galleryHorizontal:
         DelayItemLoading: =true
-        Height: =445
+        Height: =672
         Items: =CustomGallerySample
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
-        Width: =1300
-        X: =8
-        Y: =110
+        Width: =539
+        X: =40
+        Y: =40
         ZIndex: =1
 
-        Button23_1 As button:
-            Height: =155
+        Button27 As button:
+            Height: =185
             OnSelect: =Select(Parent)
             Text: =""
-            Width: =200
             X: =40
             Y: =40
             ZIndex: =1
 
-        Label13_1 As label:
-            Color: =RGBA(255, 255, 255, 1)
+        Label16 As label:
+            DisabledBorderColor: =RGBA(255, 255, 255, 1)
             OnSelect: =Select(Parent)
             Text: =ThisItem.SampleHeading
-            X: =65
-            Y: =97
+            X: =40
+            Y: =60
             ZIndex: =2
 

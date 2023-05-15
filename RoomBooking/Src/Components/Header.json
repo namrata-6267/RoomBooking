@@ -82,7 +82,7 @@
             "Name": "Rectangle1",
             "Parent": "Container1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 376,
+            "PublishOrderIndex": 375,
             "Rules": [
               {
                 "Category": "Design",
@@ -283,7 +283,7 @@
             "Name": "Label2",
             "Parent": "Container1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 377,
+            "PublishOrderIndex": 376,
             "Rules": [
               {
                 "Category": "Data",
@@ -642,7 +642,7 @@
             "Name": "Label10",
             "Parent": "Container1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 378,
+            "PublishOrderIndex": 377,
             "Rules": [
               {
                 "Category": "Data",
@@ -948,7 +948,7 @@
             "Name": "Circle2",
             "Parent": "Container1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 379,
+            "PublishOrderIndex": 378,
             "Rules": [
               {
                 "Category": "Design",
@@ -1113,7 +1113,7 @@
             "Name": "Icon3",
             "Parent": "Container1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 380,
+            "PublishOrderIndex": 379,
             "Rules": [
               {
                 "Category": "Design",
@@ -1334,7 +1334,7 @@
             "Name": "Icon4",
             "Parent": "Container1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 381,
+            "PublishOrderIndex": 380,
             "Rules": [
               {
                 "Category": "Design",
@@ -1574,7 +1574,7 @@
             "Name": "Label8",
             "Parent": "Container1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 382,
+            "PublishOrderIndex": 381,
             "Rules": [
               {
                 "Category": "Data",
@@ -1882,7 +1882,7 @@
         "Name": "Container1",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 375,
+        "PublishOrderIndex": 374,
         "Rules": [
           {
             "Category": "Design",
@@ -2094,7 +2094,7 @@
         "Name": "Label5",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 383,
+        "PublishOrderIndex": 382,
         "Rules": [
           {
             "Category": "Data",
