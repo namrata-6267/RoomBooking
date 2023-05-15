@@ -329,7 +329,13 @@
             ZIndex: =7
 
         Button22 As button:
-            OnSelect: =Navigate('Meeting Screen')
+            OnSelect: |-
+                =Navigate(Screen4);
+                
+                Set(StartDateTime,ThisItem.Start);
+                Set(EndDateTime,ThisItem.End);
+                Set(StartDateTimeUTC,Text(DateAdd(StartDateTime,TimeZoneOffset(),TimeUnit.Minutes),"[$-en-GB]yyyy-mm-ddThh:mm") & "00.000z");
+                Set(EndDateTimeUTC,Text(DateAdd(EndDateTime,TimeZoneOffset(),TimeUnit.Minutes),"[$-en-GB]yyyy-mm-ddThh:mm") & "00.000z");
             Text: ="Book"
             X: =707
             Y: =38

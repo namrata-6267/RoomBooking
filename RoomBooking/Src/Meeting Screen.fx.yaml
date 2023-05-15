@@ -291,31 +291,3 @@
         Y: =245
         ZIndex: =22
 
-    Gallery14 As gallery.galleryHorizontal:
-        DelayItemLoading: =true
-        Height: =445
-        Items: =CustomGallerySample
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
-        Width: =883
-        X: =451
-        Y: =323
-        ZIndex: =23
-
-        Button23 As button:
-            Height: =155
-            OnSelect: =Select(Parent)
-            Text: =""
-            Width: =200
-            X: =40
-            Y: =40
-            ZIndex: =1
-
-        Label13 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.SampleHeading
-            X: =65
-            Y: =97
-            ZIndex: =2
-
