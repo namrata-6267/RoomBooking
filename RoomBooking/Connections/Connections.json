@@ -11,9 +11,6 @@
     "datasets": {
       "https://3bn1xh.sharepoint.com/sites/Room_Booking": {
         "dataSources": {
-          "AllRooms": {
-            "tableName": "a0e5ab63-5a96-453a-9059-387cb85708ea"
-          },
           "Bookings": {
             "tableName": "ba9b1872-9492-4eb4-83da-99c720294bf6"
           },
@@ -48,7 +45,6 @@
     "dataSources": [
       "AdminCredentialList",
       "Table1",
-      "AllRooms",
       "EmployeesData",
       "Bookings",
       "EmployeesData_1",
