@@ -94,7 +94,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 29,
+    "BindingErrorCount": 31,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -141,6 +141,7 @@
     "RoomsAvailable_2",
     "LogOut",
     "New Request",
+    "New Request_2",
     "New Request_1",
     "Rooms Waiting For Action",
     "RoomDetailsPage",
