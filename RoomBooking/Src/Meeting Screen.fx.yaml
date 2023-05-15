@@ -1,5 +1,7 @@
 "'Meeting Screen' As screen.'tabletLayout_Calendar_ver3.0'":
-    OnVisible: =
+    OnVisible: |+
+        =ClearCollect(TotaLRooms,Office365Outlook.GetRoomsV2().value);
+        
 
     RectMeetingBkg1 As rectangle:
         Height: =42
@@ -284,8 +286,6 @@
         OnSelect: |+
             =UpdateContext({ShowGallery:true});
             
-            ClearCollect(TotalRooms,Office365Outlook.GetRoomsV2().value);
-            Set(AllRoomsAddress,Concat(TotalRooms,address & ";"));
             
             
         Text: ="Find Rooms"
