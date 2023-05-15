@@ -57,7 +57,7 @@ Screen1 As screen:
         Text: ="✔"
         Width: =312
         X: =92
-        Y: =88
+        Y: =108
         ZIndex: =8
 
     Button13_1 As button:

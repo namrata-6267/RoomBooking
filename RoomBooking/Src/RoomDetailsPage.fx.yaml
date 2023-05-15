@@ -59,6 +59,8 @@ RoomDetailsPage As screen:
         ZIndex: =3
 
     Navigation_10 As Navigation:
+        CurrentScreen: ="About"
+        NavItem: =If(FacilityView=false,NavEmployeeView,NavFacilityView)
         Y: =96
         ZIndex: =4
 
