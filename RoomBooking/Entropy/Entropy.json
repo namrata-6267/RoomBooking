@@ -439,7 +439,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/15/2023 10:30:56",
+  "HeaderLastSavedDateTimeUTC": "05/15/2023 10:41:38",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "24f74981-9290-4baa-b507-daa2983a4ef4": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/922bfc0bd2ea441ea5fa13a3aae04a43\"",
@@ -468,6 +468,7 @@
     "99b28883848845418997e0e1384ff668": 0
   },
   "OrderDataSource": {
+    "_AttendeeAvailablity": 24,
     "_meetingTimeSuggestion": 23,
     "AdminCredentialList": 6,
     "AllRooms": 21,
