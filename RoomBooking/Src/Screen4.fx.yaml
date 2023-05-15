@@ -10,6 +10,8 @@ Screen4 As screen:
         
         ClearCollect(_AttendeeAvailablity,Filter(First(_meetingTimeSuggestion).attendeeAvailability,availability="free"));
         
+        ClearCollect(AvailableRoomsEmails,ForAll(_AttendeeAvailablity,attendee.emailAddress.address));
+        
         
         
         
