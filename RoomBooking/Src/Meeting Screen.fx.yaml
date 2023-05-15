@@ -266,8 +266,8 @@
         OnSelect: |+
             =//UpdateContext({ShowGallery:true});
             
-            Set(StartDateTime,DateAdd(_dateSelected,ddStartTime.SelectedText.minutes,TimeUnit.Minutes));
-            Set(EndDateTime,DateAdd(_dateSelected,ddEndTime.SelectedText.minutes,TimeUnit.Minutes));
+            Set(StartDateTime,DateAdd(_dateSelected,ddStartTime.Selected.Minutes,TimeUnit.Minutes));
+            Set(EndDateTime,DateAdd(_dateSelected,ddEndTime.Selected.Minutes,TimeUnit.Minutes));
             Set(StartDateTimeUTC,Text(DateAdd(StartDateTime,TimeZoneOffset(),TimeUnit.Minutes),"[$-en-GB]yyyy-mm-ddThh:mm") & ":00.000z");
             Set(EndDateTimeUTC,Text(DateAdd(EndDateTime,TimeZoneOffset(),TimeUnit.Minutes),"[$-en-GB]yyyy-mm-ddThh:mm") & ":00.000z");
             
