@@ -1,7 +1,31 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |
-        =ClearCollect(
+        =ClearCollect(TimeDD,{ Text: "00:00",Minutes: 0}, {Text: "00: 30",Minutes: 30}, {Text: "01:00",Minutes: 60}, {Text: "01:30",Minutes: 90},
+         {Text: "02:00",Minutes: 120}, {Text:"02:30",Minutes: 150}, {Text:"03:00",Minutes: 180}, {Text: "03:30",Minutes: 210},
+         {Text: "04:00",Minutes: 240}, {Text: "04:30", Minutes: 270}, {Text: "05:00",Minutes: 300},
+        
+        {Text: "05:30",Minutes: 330}, {Text:"06:00",Minutes: 360}, {Text: "06:30",Minutes: 390}, 
+        {Text: "07:00", Minutes: 420}, {Text: "07:30", Minutes: 450}, {Text: "08:00",Minutes: 480},
+         {Text:"08:30", Minutes: 510}, {Text: "09:00",Minutes:540}, {Text: "09:30",Minutes:570}, {Text: "10:00",Minutes:600}, 
+        {Text: "10:30",Minutes:630}, {Text:"11:00",Minutes: 660}, {Text: "11:30", Minutes: 690}, {Text: "12:00",Minutes: 720}, 
+        {Text:"12:30", Minutes:750}, {Text:"13:00",Minutes: 780}, {Text: "13:30",Minutes: 810}, {Text:"14:00",Minutes: 840},
+         {Text: "14:30", Minutes: 870}, {Text:"15:00",Minutes: 900}, {Text:"15:30", Minutes: 930}, {Text: "16:00",Minutes: 960}, 
+        {Text: "16:30",Minutes: 990}, {Text:"17:00",Minutes: 1020}, {Text:"17:30",Minutes: 1050}, {Text: "18:00",Minutes: 1080},
+         {Text:"18:30",Minutes: 1118}, {Text: "19:00", Minutes: 1140}, {Text: "19:38",Minutes: 1170}, {Text: "20:00",Minutes: 1200}, 
+        {Text: "28:30",Minutes: 1230}, {Text:"21:00",Minutes: 1260}, {Text:"21:30",Minutes: 1290}, {Text: "22:00",Minutes: 1320}, 
+        {Text: "22:30",Minutes: 1350}, {Text: "23:00",Minutes: 1380}, {Text:"23:30", Minutes: 1410 });
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        ClearCollect(
             NavFacilityView,
              {
                     Title: "Rooms Waiting For Action",
