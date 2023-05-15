@@ -281,11 +281,13 @@
         ZIndex: =21
 
     Button8 As button:
-        OnSelect: |
-            =//ClearCollect(AllRoom,Bookings);
-            //Set(AllRoomsAddress,Concat(AllRoom,SelectedRoom & ","));
+        OnSelect: |+
+            =UpdateContext({ShowGallery:true});
             
-            Gallery9.Visible = true;
+            ClearCollect(TotalRooms,Office365Outlook.GetRoomsV2().value);
+            Set(AllRoomsAddress,Concat(TotalRooms,address & ";"));
+            
+            
         Text: ="Find Rooms"
         X: =739
         Y: =245
@@ -298,7 +300,7 @@
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =245
-        Visible: =false
+        Visible: =ShowGallery
         Width: =889
         X: =437
         Y: =331
@@ -307,13 +309,44 @@
         Button15 As button:
             Height: =102
             OnSelect: =Select(Parent)
-            Text: ="Button"
+            Text: ="Alaknanda"
+            X: =20
             ZIndex: =1
 
         Button17 As button:
             Height: =102
             OnSelect: =Select(Parent)
-            Text: ="Button"
-            X: =306
+            Text: ="Nalanda"
+            X: =322
             ZIndex: =2
+
+        Button18 As button:
+            Height: =102
+            OnSelect: =Select(Parent)
+            Text: ="Agile"
+            X: =625
+            ZIndex: =3
+
+        Button20 As button:
+            Height: =102
+            OnSelect: =Select(Parent)
+            Text: ="Takshshila"
+            X: =322
+            Y: =143
+            ZIndex: =4
+
+        Button21 As button:
+            Height: =102
+            OnSelect: =Select(Parent)
+            Text: ="Mandu"
+            X: =625
+            Y: =143
+            ZIndex: =5
+
+    Button19 As button:
+        Height: =96
+        Text: ="Mahananda"
+        X: =459
+        Y: =485
+        ZIndex: =24
 
