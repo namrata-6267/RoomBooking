@@ -6,6 +6,8 @@ Screen4 As screen:
         
         ClearCollect(FreeSlots,Office365Outlook.FindMeetingTimesV2({RequiredAttendees:AllRoomsAddress,IsOrganizerOptional:true,Start:StartDateTimeUTC,End:EndDateTimeUTC,MeetingDuration:DateDiff(StartDateTime,EndDateTime,TimeUnit.Minutes)}));
         
+        ClearCollect(_meetingTimeSuggestion,First(FreeSlots).meetingTimeSuggestions);
+        
         
 
     Gallery15 As gallery.galleryHorizontal:
