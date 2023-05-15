@@ -1,6 +1,9 @@
 Screen4 As screen:
-    OnVisible: |
+    OnVisible: |+
         =ClearCollect(AllRooms,Office365Outlook.GetRoomsV2().value);
+        Set(AllRoomsAddress,Concat(AllRooms,address & ";"));
+        
+        
 
     Gallery14_1 As gallery.galleryHorizontal:
         DelayItemLoading: =true
