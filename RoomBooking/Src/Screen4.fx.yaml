@@ -1,7 +1,7 @@
 Screen4 As screen:
     OnVisible: |+
         =ClearCollect(AllRooms,Office365Outlook.GetRoomsV2().value);
-        Set(AllRoomsAddress,Concat(AllRooms,address & ";"));
+        //Set(AllRoomsAddress,Concat(AllRooms,address & ";"));
         
         
 
