@@ -1,8 +1,8 @@
 "'Confirmation Screen' As screen":
     OnVisible: |-
-        =Set(SelectedRoomEmail,RoomGallery.Selected.Value);
+        =//Set(SelectedRoomEmail,Gallery15_1.Selected.Value);
         
-        Office365Outlook.V2CalendarPatchItem(_myCalendar.Name,CalendarEventsGallery1.Selected.Id,CalendarEventsGallery1.Selected.Subject,StartDateTimeUTC,EndDateTimeUTC,{RequiredAttendees:SelectedRoomEmail,Location:RoomGallery.Selected.Name});
+        //Office365Outlook.V2CalendarPatchItem(_myCalendar.Name,CalendarEventsGallery1.Selected.Id,CalendarEventsGallery1.Selected.Subject,StartDateTimeUTC,EndDateTimeUTC,{RequiredAttendees:SelectedRoomEmail,Location:RoomGallery.Selected.Name});
 
     Label3 As label:
         Align: =Align.Center
@@ -15,22 +15,33 @@
         Y: =84
         ZIndex: =1
 
-    Label4 As label:
-        Align: =Align.Center
-        Color: =RGBA(168, 0, 0, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =111
-        Size: =35
-        Text: =RoomGallery.Selected.Name
-        Width: =487
-        X: =410
-        Y: =346
-        ZIndex: =2
-
     Icon2 As icon.Home:
         Icon: =Icon.Home
         OnSelect: =Navigate('Main Screen',ScreenTransition.Cover)
         X: =40
         Y: =40
         ZIndex: =3
+
+    Label4 As label:
+        Height: =62
+        Size: =24
+        Text: = RoomsGallery.Selected.Name
+        Width: =189
+        X: =576
+        Y: =306
+        ZIndex: =4
+
+    Label13 As label:
+        Size: =24
+        Text: =Text(StartDateTime, DateTimeFormat.ShortTime) & " - " & Text(EndDateTime, DateTimeFormat.ShortTime)
+        Width: =293
+        X: =490
+        Y: =380
+        ZIndex: =5
+
+    Label21 As label:
+        Text: =Text(Date(), "[$-en-US]mmmm dd, yyyy")
+        X: =542
+        Y: =460
+        ZIndex: =6
 

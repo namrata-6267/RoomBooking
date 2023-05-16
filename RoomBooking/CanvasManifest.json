@@ -94,7 +94,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 17,
+    "BindingErrorCount": 6,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -129,6 +129,7 @@
   "ScreenOrder": [
     "Main Screen",
     "Meeting Screen",
+    "Meeting Screen_1",
     "Confirmation Screen",
     "LoginAsEmployee",
     "LoginAsManager",
@@ -141,12 +142,14 @@
     "RoomsAvailable_2",
     "LogOut",
     "New Request",
+    "New Request_3",
     "New Request_2",
     "New Request_1",
     "Rooms Waiting For Action",
     "RoomDetailsPage",
     "Screen1",
     "Room_Select_Screen",
-    "Screen4"
+    "Screen4",
+    "Screen2"
   ]
 }
