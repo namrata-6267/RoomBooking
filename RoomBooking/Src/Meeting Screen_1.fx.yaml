@@ -288,7 +288,6 @@
             ClearCollect(RoomDataSource,AddColumns(AvailableRoomsEmails,"Name",LookUp(AllRooms,address=Value).name));
             
             
-            Navigate('New Request')
             
         Text: ="Find Rooms"
         X: =1082
