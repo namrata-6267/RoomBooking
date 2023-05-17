@@ -5696,12 +5696,12 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "NewRequest",
+          "PropertyName": "meetingScreen",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
-          "PropertyName": "meetingScreen",
+          "PropertyName": "NewRequest",
           "RuleProviderType": "Unknown"
         },
         {

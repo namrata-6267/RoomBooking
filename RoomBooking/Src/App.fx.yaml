@@ -33,7 +33,7 @@ App As appinfo:
                 },
                  {
                     Title: "Select Rooms",
-                    TargetScreen: 'Meeting Screen'
+                    TargetScreen: 'Meeting Screen2'
                 },
                  {
                     Title: "Rooms Available",
@@ -57,7 +57,7 @@ App As appinfo:
                 },
                 {
                     Title: "Select Rooms",
-                    TargetScreen: 'Meeting Screen'
+                    TargetScreen: 'Meeting Screen2'
                 },
                 
                 {

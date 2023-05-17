@@ -3,8 +3,8 @@
     Header_4 As Header:
         meetingScreen: |-
             =//App.ActiveScreen
-            'Meeting Screen'
-        NewRequest: ='Meeting Screen'
+            'Meeting Screen2'
+        NewRequest: ='Meeting Screen2'
 
     Navigation_4 As Navigation:
         CurrentScreen: ="New Request"

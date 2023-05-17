@@ -369,7 +369,7 @@
             =
             SubmitForm(EditForm);
             Office365Outlook.SendEmailV2("namratasolanki7860@gmail.com", "Booking is Confirmed",Concatenate("Room name: ",EditForm.LastSubmit.SelectedRoom,"<br/>Date:",EditForm.LastSubmit.Date,"<br/>Start Time:",EditForm.LastSubmit.'Start Time',"End Time: ",EditForm.LastSubmit.'End Time' ) , { Importance: "Normal" });
-            Navigate('Meeting Screen');
+            Navigate('Meeting Screen2');
             
         Text: ="Book"
         X: =558

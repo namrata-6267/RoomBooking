@@ -3,7 +3,7 @@ RoomsAvailable As screen:
     Header_2 As Header:
         meetingScreen: |-
             =//App.ActiveScreen
-            'Meeting Screen'
+            'Meeting Screen2'
         NewRequest: ='New Request'
         Width: =1365
 

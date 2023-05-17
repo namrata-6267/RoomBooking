@@ -129,8 +129,8 @@
   },
   "ScreenOrder": [
     "Main Screen",
+    "Meeting Screen2",
     "Meeting Screen",
-    "Meeting Screen_1",
     "Confirmation Screen",
     "LoginAsEmployee",
     "LoginAsManager",
