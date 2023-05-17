@@ -265,7 +265,7 @@
     Button8_1 As button:
         Height: =45
         OnSelect: |+
-            =//UpdateContext({ShowGallery:true});
+            =UpdateContext({ShowGallery:true});
             
             
             Set(StartDateTime,DateAdd(_dateSelected,ddStartTime_1.Selected.Minutes,TimeUnit.Minutes));
@@ -301,6 +301,9 @@
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplateSize: =312
+        Visible: |-
+            =//true
+            ShowGallery
         Width: =840
         WrapCount: =2
         X: =458
