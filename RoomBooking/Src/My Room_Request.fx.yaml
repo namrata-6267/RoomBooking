@@ -211,6 +211,9 @@
 
     Header_1 As Header:
         Height: =96
+        meetingScreen: |-
+            =//App.ActiveScreen
+            'Meeting Screen'
         NewRequest: ='New Request'
         ZIndex: =6
 

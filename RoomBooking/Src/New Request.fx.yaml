@@ -1,6 +1,9 @@
 "'New Request' As screen":
 
     Header_4 As Header:
+        meetingScreen: |-
+            =//App.ActiveScreen
+            'Meeting Screen'
         NewRequest: ='Meeting Screen'
 
     Navigation_4 As Navigation:
@@ -292,13 +295,19 @@
 
             DataCardValue3_1 As datepicker:
                 BorderColor: =RGBA(9, 33, 98, 1)
+                DefaultDate: |+
+                    =Today()
+                    
                 Fill: =RGBA(0, 0, 0, 0)
                 Format: |-
                     =DateTimeFormat.ShortDate
                     
                     //Text(DataCardValue3_1.SelectedDate,"dd-mm-yy")
-                OnChange: |-
-                    =UpdateContext({StartDateCheck: If(DataCardValue3_1.SelectedDate < Today(),true,false)})
+                OnChange: |+
+                    =UpdateContext({StartDateCheck: If(DataCardValue3_1.SelectedDate < Today(),true,false)});
+                    
+                OnSelect: |
+                    =false
                 Visible: |+
                     =true
                     //StartDateCheck

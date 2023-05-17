@@ -32,8 +32,8 @@ App As appinfo:
                     TargetScreen: 'Rooms Waiting For Action'
                 },
                  {
-                    Title: "Show Room",
-                    TargetScreen: 'Meeting Screen'
+                    Title: "Select Rooms",
+                    TargetScreen: 'Meeting Screen_2'
                 },
                  {
                     Title: "Rooms Available",
@@ -56,9 +56,10 @@ App As appinfo:
                     TargetScreen: 'My Room_Request'
                 },
                 {
-                    Title: "Show Room",
-                    TargetScreen: 'Meeting Screen'
+                    Title: "Select Rooms",
+                    TargetScreen: 'Meeting Screen_2'
                 },
+                
                 {
                     Title: "Rooms Available",
                     TargetScreen: RoomsAvailable
