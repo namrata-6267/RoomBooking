@@ -21,6 +21,7 @@
         Width: =Parent.Width - Self.X * 2
         Wrap: =false
         X: =94
+        Y: =90
         ZIndex: =3
 
     LblResetToday1_1 As label:
@@ -168,7 +169,7 @@
         TemplatePadding: =0
         TemplateSize: =60
         Visible: =_calendarVisible
-        Width: =420
+        Width: =419
         WrapCount: =7
         Y: =WeekdayGallery1_1.Y + WeekdayGallery1_1.Height
         ZIndex: =11
@@ -246,8 +247,8 @@
         Fill: =RGBA(246, 88, 16, 1)
         OnSelect: =Navigate('Main Screen',ScreenTransition.CoverRight)
         Text: ="Book"
-        X: =1159
-        Y: =12
+        X: =1164
+        Y: =250
         ZIndex: =17
 
     Label14_6 As label:
@@ -303,9 +304,9 @@
         Visible: |-
             =//true
             If(ShowGallery=true,true,false)
-        Width: =840
+        Width: =930
         WrapCount: =2
-        X: =458
+        X: =436
         Y: =317
         ZIndex: =23
 
@@ -367,12 +368,14 @@
         Y: =147
         ZIndex: =25
 
-    Icon7 As icon.BackArrow:
-        Height: =40
+    Header_9 As Header:
+        Height: =64
+        ZIndex: =27
+
+    Icon8 As icon.BackArrow:
+        Height: =31
         Icon: =Icon.BackArrow
         OnSelect: =Back()
-        Width: =44
-        X: =15
-        Y: =12
-        ZIndex: =26
+        Width: =32
+        ZIndex: =28
 
