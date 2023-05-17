@@ -89,7 +89,11 @@ RoomsAvailable As screen:
                 
                 
                 
-                Set(varShowPopup,true)
+                Set(varShowPopup,true);
+                
+                Gallery8.Selected.RoomDescription
+                
+                
                 
                 
                 
