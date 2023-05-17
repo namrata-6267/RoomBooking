@@ -130,9 +130,11 @@ RoomsAvailable As screen:
             ZIndex: =6
 
         Label23 As label:
+            Align: =Align.Center
             Fill: =RGBA(255, 255, 0, 1)
             Height: =55
-            Text: ="                                                             Room Information"
+            Size: =20
+            Text: =" Room Information"
             Visible: |-
                 =//true
                 varShowPopup
