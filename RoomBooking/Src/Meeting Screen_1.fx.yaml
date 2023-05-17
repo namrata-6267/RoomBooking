@@ -267,6 +267,7 @@
         OnSelect: |+
             =//UpdateContext({ShowGallery:true});
             
+            
             Set(StartDateTime,DateAdd(_dateSelected,ddStartTime_1.Selected.Minutes,TimeUnit.Minutes));
             Set(EndDateTime,DateAdd(_dateSelected,ddEndTime_1.Selected.Minutes,TimeUnit.Minutes));
             Set(StartDateTimeUTC,Text(DateAdd(StartDateTime,TimeZoneOffset(),TimeUnit.Minutes),"[$-en-GB]yyyy-mm-ddThh:mm") & ":00.000z");
@@ -287,7 +288,7 @@
             ClearCollect(RoomDataSource,AddColumns(AvailableRoomsEmails,"Name",LookUp(AllRooms,address=Value).name));
             
             
-            
+            Navigate('New Request')
             
         Text: ="Find Rooms"
         X: =1082
