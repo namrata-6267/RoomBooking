@@ -80,8 +80,7 @@ RoomsAvailable As screen:
             Icon: =Icon.Information
             OnSelect: =Navigate(RoomDetailsPage)
             Width: =31
-            X: =510
-            Y: =16
+            X: =535
             ZIndex: =6
 
     Label20 As label:

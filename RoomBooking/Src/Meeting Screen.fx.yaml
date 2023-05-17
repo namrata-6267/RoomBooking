@@ -339,8 +339,7 @@
                 =//Select(Parent)
                 
                 
-                
-                Navigate('Confirmation Screen')
+                Navigate('New Request')
             Text: ="Book"
             X: =70
             Y: =154
@@ -348,12 +347,23 @@
 
     ddStartTime As dropdown:
         Items: =TimeDD
+        OnChange: |-
+            =//false
+            Set(varStartTime,ddStartTime.Selected);
+        OnSelect: |+
+            =//false
+            Set(varStartTime,ddStartTime.Selected);
+            
         X: =458
         Y: =147
         ZIndex: =24
 
     ddEndTime As dropdown:
         Items: =TimeDD
+        OnChange: |-
+            =//false
+            
+            Set(varEndTime, ddEndTime.Selected)
         X: =914
         Y: =147
         ZIndex: =25
