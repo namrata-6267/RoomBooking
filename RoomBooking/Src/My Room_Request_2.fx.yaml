@@ -3,8 +3,10 @@
     "Gallery11_3 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
         DelayItemLoading: =true
         Height: =437
-        Items: =Bookings
+        Items: =MyRoomColl
         LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |
+            =false
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =503
@@ -70,7 +72,9 @@
 
         Button10_2 As button:
             Fill: =RGBA(109, 49, 162, 1)
-            OnSelect: =Select(Parent)
+            OnSelect: |+
+                =//Select(Parent)
+                
             Text: ="Edit"
             X: =136
             Y: =298
@@ -79,7 +83,7 @@
     "Gallery5_3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         DelayItemLoading: =true
         Height: =471
-        Items: =Bookings
+        Items: =MyRoomColl
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
@@ -157,7 +161,7 @@
         DelayItemLoading: =true
         Height: =128
         Items: |-
-            =Table({Filter:"All"},{Filter:"Approved"},{Filter:"Pending"},{Filter:"Declined"})
+            =Table({Filter:"All"},{Filter:"Approved"},{Filter:"Pending"},{Filter:"Completed"})
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
@@ -179,13 +183,13 @@
                 If(ThisItem.Filter="Approved",
                 ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Approved")));
                 
-                If(ThisItem.Filter="Declined",
-                ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Declined")));
+                If(ThisItem.Filter="Completed",
+                ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Completed")));
                 
                 If(ThisItem.Filter="Pending",
                 ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Pending")));
                 
-                //If(IsEmpty(MyRoomColl),UpdateContext({NoData : "No Record Found"}),UpdateContext({NoData : ""}))
+                If(IsEmpty(MyRoomColl),UpdateContext({NoData : "No Record Found"}),UpdateContext({NoData : ""}))
             Text: =ThisItem.Filter
             X: =40
             Y: =28
@@ -200,13 +204,20 @@
     Navigation_8 As Navigation:
         CurrentScreen: ="Room Request"
         Height: =671
-        NavItem: =If(FacilityView=false,NavEmployeeView,NavFacilityView)
+        NavItem: |-
+            =If(FacilityView=false,NavEmployeeView,NavFacilityView)
+            
+            //Table({Title: "Room Request", TargetScreen : 'My Room_Request'},{Title: "Rooms Waiting For Action",
+             //TargetScreen : 'Rooms Waiting For Action'},{Title: "LogOut", TargetScreen : Home})
         Width: =155
         Y: =96
         ZIndex: =5
 
     Header_8 As Header:
         Height: =96
+        meetingScreen: |-
+            =//App.ActiveScreen
+            'Meeting Screen2'
         NewRequest: ='New Request'
         ZIndex: =6
 

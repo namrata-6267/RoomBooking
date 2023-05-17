@@ -243,14 +243,6 @@
         Y: =RectQuickActionBar1_1.Height
         ZIndex: =16
 
-    Button4_1 As button:
-        Fill: =RGBA(246, 88, 16, 1)
-        OnSelect: =Navigate('Main Screen',ScreenTransition.CoverRight)
-        Text: ="Book"
-        X: =1164
-        Y: =250
-        ZIndex: =17
-
     Label14_6 As label:
         Text: ="Start Time"
         X: =507

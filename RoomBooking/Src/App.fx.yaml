@@ -31,13 +31,14 @@ App As appinfo:
                     Title: "Rooms Waiting For Action",
                     TargetScreen: 'Rooms Waiting For Action'
                 },
-                 {
-                    Title: "Select Rooms",
-                    TargetScreen: 'Meeting Screen2'
-                },
+                 
                  {
                     Title: "Rooms Available",
                     TargetScreen: RoomsAvailable
+                },
+                 {
+                    Title: "Select Rooms",
+                    TargetScreen: 'Meeting Screen'
                 },
         
                 
@@ -57,7 +58,7 @@ App As appinfo:
                 },
                 {
                     Title: "Select Rooms",
-                    TargetScreen: 'Meeting Screen2'
+                    TargetScreen: 'Meeting Screen'
                 },
                 
                 {
