@@ -227,7 +227,9 @@
         OnSelect: |+
             =//UpdateContext({ShowGallery:true});
             
-            Set(FindRoom,true);
+            //Set(FindRoom,true);
+            
+            
             
             Set(StartDateTime,DateAdd(_dateSelected,ddStartTime.Selected.Minutes,TimeUnit.Minutes));
             Set(EndDateTime,DateAdd(_dateSelected,ddEndTime.Selected.Minutes,TimeUnit.Minutes));
@@ -264,8 +266,8 @@
         ShowScrollbar: =false
         TemplateSize: =312
         Visible: |-
-            =//true
-            FindRoom
+            =true
+            //FindRoom
         Width: =1005
         WrapCount: =2
         X: =228
