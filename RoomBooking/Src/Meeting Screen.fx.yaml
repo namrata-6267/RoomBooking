@@ -6,7 +6,7 @@
         Visible: =_calendarVisible
         Width: =Parent.Width - Self.X
         X: =422
-        Y: =RectQuickActionBar1.Height
+        Y: =84
         ZIndex: =1
 
     RectQuickActionBar1 As rectangle:
@@ -242,24 +242,16 @@
         Y: =RectQuickActionBar1.Height
         ZIndex: =16
 
-    Button4 As button:
-        Fill: =RGBA(246, 88, 16, 1)
-        OnSelect: =Navigate('Main Screen',ScreenTransition.CoverRight)
-        Text: ="Book"
-        X: =1159
-        Y: =12
-        ZIndex: =17
-
     Label14 As label:
         Text: ="Start Time"
-        X: =507
-        Y: =88
+        X: =505
+        Y: =106
         ZIndex: =18
 
     Label15 As label:
         Text: ="End Time"
         X: =981
-        Y: =90
+        Y: =107
         ZIndex: =19
 
     Button8 As button:
@@ -367,4 +359,8 @@
         X: =914
         Y: =147
         ZIndex: =25
+
+    Header_13 As Header:
+        Height: =64
+        ZIndex: =26
 
