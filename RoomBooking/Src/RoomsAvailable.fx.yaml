@@ -81,7 +81,21 @@ RoomsAvailable As screen:
         Icon1 As icon.Information:
             Height: =32
             Icon: =Icon.Information
-            OnSelect: =Navigate(RoomDetailsPage)
+            OnSelect: |-
+                =
+                
+                
+                
+                
+                
+                
+                Set(varShowPopup,true)
+                
+                
+                
+                
+                
+                //Navigate(RoomDetailsPage)
             Width: =31
             X: =535
             ZIndex: =6
@@ -96,4 +110,66 @@ RoomsAvailable As screen:
         X: =355
         Y: =149
         ZIndex: =4
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
+
+        Rectangle3 As rectangle:
+            Fill: =RGBA(216,191,216,0.5)
+            Height: =768
+            Visible: |-
+                =//true
+                varShowPopup
+            Width: =1365
+            ZIndex: =5
+
+        Rectangle4 As rectangle:
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =413
+            Visible: |-
+                =//true
+                varShowPopup
+            Width: =724
+            X: =355
+            Y: =204
+            ZIndex: =6
+
+        Label23 As label:
+            Fill: =RGBA(255, 255, 0, 1)
+            Height: =55
+            Text: ="                                                             Room Information"
+            Visible: |-
+                =//true
+                varShowPopup
+            Width: =724
+            X: =355
+            Y: =204
+            ZIndex: =7
+
+        Label24 As label:
+            Height: =292
+            Text: =""
+            Visible: |-
+                =//true
+                varShowPopup
+            Width: =724
+            X: =355
+            Y: =259
+            ZIndex: =8
+
+        Button1 As button:
+            OnSelect: |-
+                =//false
+                Set(varShowPopup,false);
+            Text: ="Close"
+            Visible: |-
+                =//true
+                varShowPopup
+            X: =637
+            Y: =577
+            ZIndex: =9
 

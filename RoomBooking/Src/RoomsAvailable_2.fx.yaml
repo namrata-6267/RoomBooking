@@ -1,6 +1,9 @@
 RoomsAvailable_2 As screen:
 
     Header_7 As Header:
+        meetingScreen: |-
+            =//App.ActiveScreen
+            'Meeting Screen2'
         NewRequest: ='New Request'
         Width: =1365
 
@@ -13,6 +16,84 @@ RoomsAvailable_2 As screen:
             
             
             
+            
         Y: =96
         ZIndex: =2
+
+    "Gallery8_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        DelayItemLoading: =true
+        Height: =503
+        Items: =Rooms_Available
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Width: =1132
+        WrapCount: =2
+        X: =192
+        Y: =232
+        ZIndex: =3
+
+        Image7_1 As image:
+            Height: =128
+            Image: =hall
+            OnSelect: =Select(Parent)
+            Width: =197
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title9_1 As label:
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Rooms
+            VerticalAlign: =VerticalAlign.Top
+            Width: =241
+            X: =247
+            Y: =48
+            ZIndex: =2
+
+        Subtitle7_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                ="Seats Available : "&ThisItem.SeatsAvailable
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title9_1.Width
+            X: =Title9_1.X
+            Y: =Title9_1.Y + Title9_1.Height + 4
+            ZIndex: =3
+
+        Separator7_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Icon1_1 As icon.Information:
+            Height: =32
+            Icon: =Icon.Information
+            OnSelect: =Navigate(RoomDetailsPage)
+            Width: =31
+            X: =535
+            ZIndex: =6
+
+    Label20_1 As label:
+        Color: =RGBA(118, 0, 0, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =55
+        Size: =35
+        Text: ="These are the rooms available"
+        Width: =724
+        X: =355
+        Y: =149
+        ZIndex: =4
 
