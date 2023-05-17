@@ -49,37 +49,8 @@
         Tooltip: ="Reset selected date to today"
         Width: =40
         X: =395 - Self.Width
-        Y: =dropdownCalendarSelection1.Y
+        Y: =
         ZIndex: =5
-
-    dropdownCalendarSelection1 As dropdown:
-        Default: =_myCalendar.DisplayName
-        Items: =Office365Outlook.CalendarGetTables().value
-        OnChange: =Select(dropdownCalendarSelection1)
-        OnSelect: |-
-            =/*retrieves calendar events for all days in current month view and selected calendar 
-            _minDate and _maxDate act as markers to prevent duplicate data collection*/         
-            If(IsBlank(_userDomain),         
-            	UpdateContext({_showLoading: true});         
-            	Set(_userDomain, Right(User().Email, Len(User().Email) - Find("@", User().Email)));         
-            	Set(_dateSelected, Today());         
-            	Set(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), TimeUnit.Days));         
-            	Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));         
-            	Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days))         
-            );         
-            Set(_calendarVisible, false);         
-            UpdateContext({_showLoading: true});         
-            Set(_myCalendar, Self.Selected);         
-            Set(_minDate, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));         
-            Set(_maxDate, DateAdd(DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days), 40, TimeUnit.Days));         
-            ClearCollect(MyCalendarEvents, Office365Outlook.GetEventsCalendarViewV2(_myCalendar.Name, Text(_minDate, DateTimeFormat.UTC), Text(_maxDate, DateTimeFormat.UTC)).value);         
-            UpdateContext({_showLoading: false});         
-            Set(_calendarVisible, true)
-        Tooltip: ="Select a calendar"
-        Width: =307
-        X: =32
-        Y: =RectQuickActionBar1.Height + 24
-        ZIndex: =6
 
     LblMonthSelected1 As label:
         Align: =Align.Center
@@ -89,7 +60,7 @@
         Visible: =_calendarVisible
         Width: =419
         Wrap: =false
-        Y: =dropdownCalendarSelection1.Y + dropdownCalendarSelection1.Height + 40
+        Y: =
         ZIndex: =7
 
     iconPrevMonth1 As icon.ChevronLeft:
@@ -239,23 +210,16 @@
         Y: =RectQuickActionBar1.Height
         ZIndex: =12
 
-    RectCalendarSeparator1 As rectangle:
-        Height: =Parent.Height - Self.Y
-        Width: =2
-        X: =420
-        Y: =RectQuickActionBar1.Height
-        ZIndex: =16
-
     Label14 As label:
         Text: ="Start Time"
-        X: =505
-        Y: =106
+        X: =324
+        Y: =107
         ZIndex: =18
 
     Label15 As label:
         Text: ="End Time"
-        X: =981
-        Y: =107
+        X: =941
+        Y: =110
         ZIndex: =19
 
     Button8 As button:
@@ -288,8 +252,8 @@
             
             
         Text: ="Find Rooms"
-        X: =739
-        Y: =245
+        X: =614
+        Y: =262
         ZIndex: =22
 
     RoomGallery As gallery.galleryHorizontal:
@@ -302,9 +266,9 @@
         Visible: |-
             =//true
             FindRoom
-        Width: =840
+        Width: =1005
         WrapCount: =2
-        X: =458
+        X: =228
         Y: =317
         ZIndex: =23
 
@@ -356,8 +320,8 @@
             =//false
             Set(varStartTime,ddStartTime.Selected);
             
-        X: =458
-        Y: =147
+        X: =235
+        Y: =176
         ZIndex: =24
 
     ddEndTime As dropdown:
@@ -366,15 +330,21 @@
             =//false
             
             Set(varEndTime, ddEndTime.Selected)
-        X: =914
-        Y: =147
+        X: =852
+        Y: =170
         ZIndex: =25
 
     Header_13 As Header:
-        Height: =64
+        Height: =84
         meetingScreen: ='Meeting Screen'
         NewRequest: |-
             =//App.ActiveScreen
             'Meeting Screen'
         ZIndex: =26
+
+    Navigation_13 As Navigation:
+        CurrentScreen: ="Select Rooms"
+        Width: =152
+        Y: =96
+        ZIndex: =27
 
