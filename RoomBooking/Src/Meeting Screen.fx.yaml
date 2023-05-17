@@ -20,7 +20,7 @@
         Text: ="My Bookings"
         Width: =Parent.Width - Self.X * 2
         Wrap: =false
-        X: =32
+        X: =94
         ZIndex: =3
 
     LblResetToday1_1 As label:
@@ -288,7 +288,6 @@
             ClearCollect(RoomDataSource,AddColumns(AvailableRoomsEmails,"Name",LookUp(AllRooms,address=Value).name));
             
             
-            
         Text: ="Find Rooms"
         X: =754
         Y: =245
@@ -303,7 +302,7 @@
         TemplateSize: =312
         Visible: |-
             =//true
-            ShowGallery
+            If(ShowGallery=true,true,false)
         Width: =840
         WrapCount: =2
         X: =458
@@ -352,13 +351,28 @@
 
     ddStartTime_1 As dropdown:
         Items: =TimeDD
+        Reset: |-
+            =//false
+            true
         X: =458
         Y: =147
         ZIndex: =24
 
     ddEndTime_1 As dropdown:
         Items: =TimeDD
+        Reset: |-
+            =//false
+            true
         X: =914
         Y: =147
         ZIndex: =25
+
+    Icon7 As icon.BackArrow:
+        Height: =40
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =44
+        X: =15
+        Y: =12
+        ZIndex: =26
 
