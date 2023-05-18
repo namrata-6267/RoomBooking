@@ -231,7 +231,7 @@
         Height: =57
         Items: |-
             =//DropDownSample
-            ["All","Approval","Pending","Completed"]
+            ["All","Approved","Pending","Completed"]
         OnChange: =Set(varDStatus,Dropdown1.SelectedText)
         OnSelect: |+
             =//false
