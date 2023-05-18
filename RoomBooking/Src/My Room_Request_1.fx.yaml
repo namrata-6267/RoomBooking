@@ -160,9 +160,8 @@
     Gallery2_2 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =139
-        Items: |-
+        Items: |
             =//Table({Filter:"All"},{Filter:"Approved"},{Filter:"Pending"},{Filter:"Completed"})
-            
             Table({Filter:"Approved"},{Filter:"Pending"},{Filter:"Completed"})
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
