@@ -95,7 +95,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 2,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -128,7 +128,6 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Confirmation Screen",
     "Home",
     "LoginAsEmployee",
     "LoginAsManager",
