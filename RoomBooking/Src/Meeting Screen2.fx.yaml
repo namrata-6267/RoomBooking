@@ -154,7 +154,7 @@
         Y: =262
         ZIndex: =22
 
-    RoomGallery As gallery.galleryHorizontal:
+    RoomGallerys As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Height: =451
         Items: =RoomDataSource
@@ -203,7 +203,7 @@
                 =//Select(Parent)
                 
                 
-                Navigate('New Request')
+                //Navigate('New Request')
             Text: ="Book"
             X: =70
             Y: =154
@@ -245,4 +245,11 @@
         Width: =152
         Y: =96
         ZIndex: =27
+
+    Icon8_1 As icon.BackArrow:
+        Height: =31
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =32
+        ZIndex: =28
 

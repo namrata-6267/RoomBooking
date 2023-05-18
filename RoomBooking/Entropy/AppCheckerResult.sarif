@@ -3042,6 +3042,18 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -3712,49 +3724,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Meeting Screen'.RoomsGallery.AccessibleLabel"
+                  "fullyQualifiedName": "'Meeting Screen'.RoomGallery.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Meeting Screen'.RoomsGallery.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Meeting Screen",
-                "type": "'Meeting Screen'.RoomsGallery"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Meeting Screen'.RoomsGallery.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Meeting Screen'.RoomsGallery.TabIndex",
+                  "fullyQualifiedName": "'Meeting Screen'.RoomGallery.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Meeting Screen",
-                "type": "'Meeting Screen'.RoomsGallery"
+                "type": "'Meeting Screen'.RoomGallery"
               }
             }
           ],
@@ -3766,6 +3748,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Meeting Screen'.RoomGallery.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Meeting Screen'.RoomGallery.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Meeting Screen",
+                "type": "'Meeting Screen'.RoomGallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3982,19 +3994,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Meeting Screen2'.RoomGallery.AccessibleLabel"
+                  "fullyQualifiedName": "'Meeting Screen2'.RoomGallerys.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Meeting Screen2'.RoomGallery.AccessibleLabel",
+                  "fullyQualifiedName": "'Meeting Screen2'.RoomGallerys.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Meeting Screen2",
-                "type": "'Meeting Screen2'.RoomGallery"
+                "type": "'Meeting Screen2'.RoomGallerys"
               }
             }
           ],
@@ -4012,19 +4024,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Meeting Screen2'.RoomGallery.TabIndex"
+                  "fullyQualifiedName": "'Meeting Screen2'.RoomGallerys.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Meeting Screen2'.RoomGallery.TabIndex",
+                  "fullyQualifiedName": "'Meeting Screen2'.RoomGallerys.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Meeting Screen2",
-                "type": "'Meeting Screen2'.RoomGallery"
+                "type": "'Meeting Screen2'.RoomGallerys"
               }
             }
           ],
@@ -4942,6 +4954,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Meeting Screen2'.Icon8_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Meeting Screen2'.Icon8_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Meeting Screen2",
+                "type": "'Meeting Screen2'.Icon8_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Meeting Screen2'.Icon8_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Meeting Screen2'.Icon8_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Meeting Screen2",
+                "type": "'Meeting Screen2'.Icon8_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'My Room_Request_2'.Gallery2_3.Button6_3.OnSelect"
                 }
               ],
@@ -5026,6 +5098,36 @@
           },
           "ruleId": "app-CollectDelegatableDataSource",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Meeting Screen'.ShowGallery"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Meeting Screen'.ShowGallery",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ShowGallery",
+                "module": "Meeting Screen",
+                "type": "'Meeting Screen'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 3
         },
         {
           "locations": [

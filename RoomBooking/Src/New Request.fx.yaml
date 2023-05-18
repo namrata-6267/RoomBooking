@@ -211,7 +211,7 @@
             Required: =false
             Update: |-
                 =//DataCardValue2_1.SelectedText.Value
-                RoomGallery.Selected.Name
+                RoomGallerys.Selected.Name
             Width: =377
             X: =0
             Y: =0
@@ -253,7 +253,7 @@
                 ZIndex: =4
 
             DataCardValue2_1 As text:
-                Default: =RoomsGallery.Selected.Name
+                Default: =RoomGallerys.Selected.Name
                 X: =27
                 Y: =87
                 ZIndex: =6
