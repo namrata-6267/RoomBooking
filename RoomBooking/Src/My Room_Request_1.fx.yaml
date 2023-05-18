@@ -83,12 +83,7 @@
     "Gallery5_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         DelayItemLoading: =true
         Height: =479
-        Items: |+
-            =MyRoomColl
-            
-            
-            
-            
+        Items: =Bookings
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
