@@ -70,6 +70,7 @@ App As appinfo:
                     TargetScreen: Home
                 }
             )
+    StartScreen: =Home
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false
