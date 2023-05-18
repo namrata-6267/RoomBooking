@@ -489,7 +489,7 @@
             If(IsEmpty(MyRoomColl),UpdateContext({NoData : "No Record Found"}),UpdateContext({NoData : ""}))
             
         Width: =160
-        X: =1204
-        Y: =244
+        X: =1184
+        Y: =168
         ZIndex: =10
 
