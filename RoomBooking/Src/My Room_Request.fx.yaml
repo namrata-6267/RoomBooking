@@ -179,7 +179,7 @@
         Height: =96
         meetingScreen: |-
             =//App.ActiveScreen
-            'Meeting Screen2'
+            'Meeting Screen'
         NewRequest: ='New Request'
         ZIndex: =6
 
