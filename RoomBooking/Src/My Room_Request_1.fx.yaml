@@ -85,10 +85,8 @@
         Height: =471
         Items: |-
             =//MyRoomColl
-            Filter(
-                MyRoomColl,
-                If(
-                    varDStatus.Value = "All" || IsBlank(varDStatus.Value),
+            Filter(MyRoomColl,
+                   If( varDStatus.Value = "All" || IsBlank(varDStatus.Value),
                     varDStatus.Value = "Pending",(Status.Value="Pending"),
                     varDStatus.Value = "Approved",(Status.Value="Approved"),
                     varDStatus.Value = "Completed", (Status.Value="Completed")
