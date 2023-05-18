@@ -1,4 +1,5 @@
 "'New Request' As screen":
+    OnVisible: =NewForm(EditForm_1)
 
     Header_4 As Header:
         meetingScreen: |-

@@ -297,7 +297,7 @@
         TemplateSize: =312
         Visible: |-
             =//true
-            If(ShowGallery=true,false,true)
+            If(ShowGallery=true,true,false)
         Width: =930
         WrapCount: =2
         X: =436
@@ -305,7 +305,7 @@
         ZIndex: =23
 
         Button27_2 As button:
-            Fill: =RGBA(109, 49, 162, 1)
+            Fill: =RGBA(109, 49, 162, 0.51)
             Height: =178
             OnSelect: =Select(Parent)
             Text: =""
@@ -327,13 +327,14 @@
         Label18_3 As label:
             Color: =RGBA(255, 255, 255, 1)
             OnSelect: =Select(Parent)
+            Size: =15
             Text: =ThisItem.Name
             X: =107
             Y: =82
             ZIndex: =3
 
         Button14_2 As button:
-            Fill: =RGBA(168, 0, 0, 1)
+            Fill: =RGBA(168, 0, 76, 0.51)
             OnSelect: |-
                 =//Select(Parent)
                 
