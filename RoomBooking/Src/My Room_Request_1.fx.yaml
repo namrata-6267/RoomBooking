@@ -90,9 +90,9 @@
                 If(
                     varDStatus.Value = "All" || IsBlank(varDStatus.Value),
                     varDStatus.Value = "Pending",(Status.Value="Pending"),
-                    varDStatus.Value = "Approved",Status.Value="Approved",
-                    varDStatus.Value = "Completed", Status.Value="Completed")
-                    )
+                    varDStatus.Value = "Approved",(Status.Value="Approved"),
+                    varDStatus.Value = "Completed", (Status.Value="Completed")
+                    ))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
