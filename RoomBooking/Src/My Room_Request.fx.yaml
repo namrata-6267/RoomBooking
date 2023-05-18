@@ -2,17 +2,17 @@
 
     "Gallery11 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
         DelayItemLoading: =true
-        Height: =437
+        Height: =51
         Items: =MyRoomColl
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |
             =false
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =503
+        TemplateSize: =504
         Width: =504
-        X: =785
-        Y: =256
+        X: =790
+        Y: =281
         ZIndex: =1
 
         Title16 As label:
@@ -89,7 +89,7 @@
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =159
-        Width: =468
+        Width: =503
         X: =218
         Y: =244
         ZIndex: =2
@@ -220,4 +220,276 @@
             'Meeting Screen2'
         NewRequest: ='New Request'
         ZIndex: =6
+
+    FormViewer1 As formViewer:
+        DataSource: =Bookings
+        Height: =372
+        Item: =Gallery5.Selected
+        NumberOfColumns: =1
+        Width: =499
+        X: =865
+        Y: =267
+        ZIndex: =7
+
+        SelectedRoom_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SelectRoom"
+            Default: =ThisItem.SelectedRoom
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Bookings],DataSourceInfo.DisplayName,"SelectRoom")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =35
+            Required: =false
+            Width: =499
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+            DataCardKey6 As label:
+                Height: =31
+                Size: =15
+                Text: =Parent.DisplayName
+                Width: =256
+                Wrap: =false
+                X: =26
+                Y: =6
+                ZIndex: =1
+
+            DataCardValue6 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =15
+                Text: =Parent.Default
+                Width: =279
+                X: =219
+                Y: =10
+                ZIndex: =2
+
+        Date_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Date"
+            Default: =ThisItem.Date
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Bookings],DataSourceInfo.DisplayName,"Date")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =499
+            X: =0
+            Y: =1
+            ZIndex: =8
+
+            DataCardKey7 As label:
+                AutoHeight: =true
+                Height: =34
+                Size: =15
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =8
+                ZIndex: =1
+
+            DataCardValue7 As label:
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =15
+                Text: =Parent.Default
+                Width: =240
+                X: =228
+                Y: =10
+                ZIndex: =2
+
+        "'Start Time_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="StartTime"
+            Default: =ThisItem.'Start Time'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Bookings],DataSourceInfo.DisplayName,"StartTime")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =499
+            X: =0
+            Y: =2
+            ZIndex: =8
+
+            DataCardKey8 As label:
+                AutoHeight: =true
+                Height: =34
+                Size: =15
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue8.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue8 As label:
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =15
+                Text: =Parent.Default
+                Width: =230
+                X: =237
+                Y: =10
+                ZIndex: =2
+
+        "'End Time_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EndTime"
+            Default: =ThisItem.'End Time'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Bookings],DataSourceInfo.DisplayName,"EndTime")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =46
+            Required: =false
+            Width: =499
+            X: =0
+            Y: =3
+            ZIndex: =8
+
+            DataCardKey9 As label:
+                AutoHeight: =true
+                Height: =34
+                Size: =15
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue9.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue9 As label:
+                DisplayMode: =Parent.DisplayMode
+                Height: =28
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =15
+                Text: =Parent.Default
+                Width: =253
+                X: =231
+                Y: =5
+                ZIndex: =2
+
+        Status_DataCard1 As typedDataCard.comboBoxViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Status"
+            Default: =ThisItem.Status
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Bookings],DataSourceInfo.DisplayName,"Status")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue11.Selected
+            Width: =499
+            X: =0
+            Y: =4
+            ZIndex: =8
+
+            DataCardKey11 As label:
+                AutoHeight: =true
+                Height: =34
+                Size: =15
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =13
+                ZIndex: =1
+
+            DataCardValue11 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =37
+                Items: =Choices([@Bookings].Status)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Bookings.Status,DataCardValue11.SearchText)
+                SelectMultiple: =false
+                Width: =230
+                X: =238
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue11.Y + DataCardValue11.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey11.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey11.Y
+                ZIndex: =4
+
+    Button4 As button:
+        Text: ="Edit"
+        X: =959
+        Y: =522
+        ZIndex: =8
+
+    Icon7 As icon.Edit:
+        Height: =40
+        Icon: =Icon.Edit
+        Width: =31
+        X: =912
+        Y: =522
+        ZIndex: =9
+
+    Dropdown1_1 As dropdown:
+        ChevronBackground: =RGBA(109, 49, 162, 1)
+        Items: |-
+            =//DropDownSample
+            ["All","Approved","Pending","Completed"]
+        OnChange: =Set(varDStatus,Dropdown1_1.SelectedText)
+        OnSelect: |+
+            =//false
+            
+            If(varDStatus.Value="All",
+            ClearCollect(MyRoomColl,Bookings));
+            
+            If(varDStatus.Value="Approved",
+            ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Approved")));
+            
+            
+            If(varDStatus.Value="Pending",
+            ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Pending")));
+            
+            If(varDStatus.Value="Completed",
+            ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Completed")));
+            
+            If(IsEmpty(MyRoomColl),UpdateContext({NoData : "No Record Found"}),UpdateContext({NoData : ""}))
+            
+        Width: =160
+        X: =1204
+        Y: =244
+        ZIndex: =10
 

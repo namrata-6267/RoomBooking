@@ -3,7 +3,7 @@
     "Gallery11_2 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
         DelayItemLoading: =true
         Height: =437
-        Items: =Bookings
+        Items: =MyRoomColl
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |
             =false
@@ -83,7 +83,7 @@
     "Gallery5_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         DelayItemLoading: =true
         Height: =479
-        Items: =Bookings
+        Items: =MyRoomColl
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
