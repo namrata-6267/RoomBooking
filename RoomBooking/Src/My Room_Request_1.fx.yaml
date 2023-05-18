@@ -242,11 +242,12 @@
             If(varDStatus.Value="Approved",
             ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Approved")));
             
-            If(varDStatus.Value="Completed",
-            ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Completed")));
             
             If(varDStatus.Value="Pending",
             ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Pending")));
+            
+            If(varDStatus.Value="Completed",
+            ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Completed")));
             
             If(IsEmpty(MyRoomColl),UpdateContext({NoData : "No Record Found"}),UpdateContext({NoData : ""}))
             
