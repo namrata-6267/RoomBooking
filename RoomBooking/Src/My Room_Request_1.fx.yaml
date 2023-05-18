@@ -83,7 +83,16 @@
     "Gallery5_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         DelayItemLoading: =true
         Height: =471
-        Items: =MyRoomColl
+        Items: |-
+            =//MyRoomColl
+            Filter(
+                MyRoomColl,
+                If(
+                    varDStatus.Value = "All" || IsBlank(varDStatus.Value),
+                    varDStatus.Value = "Pending",(Status.Value="Pending"),
+                    varDStatus.Value = "Approved",Status.Value="Approved",
+                    varDStatus.Value = "Completed", Status.Value="Completed")
+                    )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
@@ -221,4 +230,18 @@
             'Meeting Screen2'
         NewRequest: ='New Request'
         ZIndex: =6
+
+    Dropdown1 As dropdown:
+        Height: =57
+        Items: |-
+            =//DropDownSample
+            ["All","Approval","Pending","Completed"]
+        OnChange: =Set(varDStatus,Dropdown1.SelectedText)
+        OnSelect: |+
+            =false
+            
+        Width: =218
+        X: =1026
+        Y: =244
+        ZIndex: =7
 
