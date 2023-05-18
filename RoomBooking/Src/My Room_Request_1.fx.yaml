@@ -3,7 +3,7 @@
     "Gallery11_2 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
         DelayItemLoading: =true
         Height: =437
-        Items: =MyRoomColl
+        Items: =Bookings
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |
             =false
