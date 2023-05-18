@@ -82,16 +82,16 @@
 
     "Gallery5 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         DelayItemLoading: =true
-        Height: =501
+        Height: =477
         Items: =MyRoomColl
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =159
-        Width: =540
-        X: =218
-        Y: =214
+        Width: =562
+        X: =195
+        Y: =238
         ZIndex: =2
 
         Subtitle5 As label:

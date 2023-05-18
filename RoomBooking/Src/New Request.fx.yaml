@@ -254,7 +254,6 @@
 
             DataCardValue2_1 As text:
                 Default: =RoomsGallery.Selected.Name
-                DisplayMode: =DisplayMode.Disabled
                 X: =27
                 Y: =87
                 ZIndex: =6
