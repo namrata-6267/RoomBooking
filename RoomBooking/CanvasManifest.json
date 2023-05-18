@@ -128,21 +128,19 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Meeting Screen2",
-    "Meeting Screen",
     "Confirmation Screen",
+    "Home",
     "LoginAsEmployee",
     "LoginAsManager",
-    "Home",
+    "LogOut",
+    "Meeting Screen",
+    "Meeting Screen2",
     "My Room_Request",
     "My Room_Request_2",
-    "My Room_Request_1",
-    "RoomsAvailable",
-    "RoomsAvailable_2",
-    "LogOut",
     "New Request",
-    "New Request_3",
+    "RoomDetailsPage",
     "Rooms Waiting For Action",
-    "RoomDetailsPage"
+    "RoomsAvailable",
+    "RoomsAvailable_2"
   ]
 }
