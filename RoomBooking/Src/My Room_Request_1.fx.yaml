@@ -82,7 +82,7 @@
 
     "Gallery5_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         DelayItemLoading: =true
-        Height: =471
+        Height: =479
         Items: |+
             =MyRoomColl
             
@@ -94,9 +94,9 @@
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =159
-        Width: =468
+        Width: =525
         X: =218
-        Y: =244
+        Y: =236
         ZIndex: =2
 
         Subtitle5_2 As label:
@@ -162,45 +162,6 @@
             Y: =56
             ZIndex: =8
 
-    Gallery2_2 As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Height: =139
-        Items: |
-            =//Table({Filter:"All"},{Filter:"Approved"},{Filter:"Pending"},{Filter:"Completed"})
-            Table({Filter:"Approved"},{Filter:"Pending"},{Filter:"Completed"})
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-        Width: =1047
-        WrapCount: =4
-        X: =218
-        Y: =105
-        ZIndex: =3
-
-        Button6_2 As button:
-            Fill: =RGBA(109, 49, 162, 1)
-            OnSelect: |-
-                =//If(ThisItem.Filter="All",ClearCollect(MyRoomColl,Filter(Bookings,RequestedBy=User().Email)),
-                //ClearCollect(MyRoomColl,Filter(Bookings,Status.Value=ThisItem.Filter,RequestedBy=User().Email)));
-                //If(ThisItem.Filter = "All",UpdateContext({FilteredData:Filter(Bookings,Status.Value = "Approved")}));
-                If(ThisItem.Filter="All",
-                ClearCollect(MyRoomColl,Bookings));
-                
-                If(ThisItem.Filter="Approved",
-                ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Approved")));
-                
-                If(ThisItem.Filter="Completed",
-                ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Completed")));
-                
-                If(ThisItem.Filter="Pending",
-                ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Pending")));
-                
-                If(IsEmpty(MyRoomColl),UpdateContext({NoData : "No Record Found"}),UpdateContext({NoData : ""}))
-            Text: =ThisItem.Filter
-            X: =40
-            Y: =28
-            ZIndex: =1
-
     Label19_1 As label:
         Text: =
         X: =608
@@ -228,7 +189,7 @@
         ZIndex: =6
 
     Dropdown1 As dropdown:
-        Height: =57
+        ChevronBackground: =RGBA(109, 49, 162, 1)
         Items: |-
             =//DropDownSample
             ["All","Approved","Pending","Completed"]
@@ -251,8 +212,19 @@
             
             If(IsEmpty(MyRoomColl),UpdateContext({NoData : "No Record Found"}),UpdateContext({NoData : ""}))
             
-        Width: =218
-        X: =1026
-        Y: =244
+        Width: =160
+        X: =994
+        Y: =146
         ZIndex: =7
+
+    Label22 As label:
+        Color: =RGBA(109, 49, 162, 1)
+        Height: =64
+        Size: =25
+        Text: |-
+            ="Status of all Rooms :"
+        Width: =746
+        X: =248
+        Y: =134
+        ZIndex: =8
 
