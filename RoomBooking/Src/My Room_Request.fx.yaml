@@ -82,16 +82,16 @@
 
     "Gallery5 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         DelayItemLoading: =true
-        Height: =471
+        Height: =501
         Items: =MyRoomColl
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =159
-        Width: =503
+        Width: =540
         X: =218
-        Y: =244
+        Y: =214
         ZIndex: =2
 
         Subtitle5 As label:
@@ -157,44 +157,6 @@
             Y: =56
             ZIndex: =8
 
-    Gallery2 As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Height: =128
-        Items: |-
-            =Table({Filter:"All"},{Filter:"Approved"},{Filter:"Pending"},{Filter:"Completed"})
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-        Width: =1080
-        WrapCount: =4
-        X: =186
-        Y: =105
-        ZIndex: =3
-
-        Button6 As button:
-            Fill: =RGBA(109, 49, 162, 1)
-            OnSelect: |-
-                =//If(ThisItem.Filter="All",ClearCollect(MyRoomColl,Filter(Bookings,RequestedBy=User().Email)),
-                //ClearCollect(MyRoomColl,Filter(Bookings,Status.Value=ThisItem.Filter,RequestedBy=User().Email)));
-                //If(ThisItem.Filter = "All",UpdateContext({FilteredData:Filter(Bookings,Status.Value = "Approved")}));
-                If(ThisItem.Filter="All",
-                ClearCollect(MyRoomColl,Bookings));
-                
-                If(ThisItem.Filter="Approved",
-                ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Approved")));
-                
-                If(ThisItem.Filter="Completed",
-                ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Completed")));
-                
-                If(ThisItem.Filter="Pending",
-                ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Pending")));
-                
-                If(IsEmpty(MyRoomColl),UpdateContext({NoData : "No Record Found"}),UpdateContext({NoData : ""}))
-            Text: =ThisItem.Filter
-            X: =40
-            Y: =40
-            ZIndex: =1
-
     Label19 As label:
         Text: =
         X: =608
@@ -246,6 +208,7 @@
             ZIndex: =8
 
             DataCardKey6 As label:
+                Color: =RGBA(109, 49, 162, 1)
                 Height: =31
                 Size: =15
                 Text: =Parent.DisplayName
@@ -256,7 +219,6 @@
                 ZIndex: =1
 
             DataCardValue6 As label:
-                AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -264,8 +226,8 @@
                 PaddingTop: =0
                 Size: =15
                 Text: =Parent.Default
-                Width: =279
-                X: =219
+                Width: =266
+                X: =231
                 Y: =10
                 ZIndex: =2
 
@@ -285,6 +247,7 @@
 
             DataCardKey7 As label:
                 AutoHeight: =true
+                Color: =RGBA(109, 49, 162, 1)
                 Height: =34
                 Size: =15
                 Text: =Parent.DisplayName
@@ -323,6 +286,7 @@
 
             DataCardKey8 As label:
                 AutoHeight: =true
+                Color: =RGBA(109, 49, 162, 1)
                 Height: =34
                 Size: =15
                 Text: =Parent.DisplayName
@@ -334,7 +298,7 @@
 
             DataCardValue8 As label:
                 DisplayMode: =Parent.DisplayMode
-                Height: =32
+                Height: =36
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -361,6 +325,7 @@
 
             DataCardKey9 As label:
                 AutoHeight: =true
+                Color: =RGBA(109, 49, 162, 1)
                 Height: =34
                 Size: =15
                 Text: =Parent.DisplayName
@@ -400,6 +365,7 @@
 
             DataCardKey11 As label:
                 AutoHeight: =true
+                Color: =RGBA(109, 49, 162, 1)
                 Height: =34
                 Size: =15
                 Text: =Parent.DisplayName
@@ -451,6 +417,10 @@
                 ZIndex: =4
 
     Button4 As button:
+        BorderColor: |-
+            =ColorFade(Self.Fill, -15%)
+            //RGBA(191, 64, 191,10)
+        Fill: =RGBA(109, 49, 162, 1)
         Text: ="Edit"
         X: =959
         Y: =522
@@ -489,7 +459,18 @@
             If(IsEmpty(MyRoomColl),UpdateContext({NoData : "No Record Found"}),UpdateContext({NoData : ""}))
             
         Width: =160
-        X: =1184
-        Y: =168
+        X: =981
+        Y: =150
         ZIndex: =10
+
+    Label22_1 As label:
+        Color: =RGBA(109, 49, 162, 1)
+        Height: =64
+        Size: =25
+        Text: |-
+            ="Status of all Rooms :"
+        Width: =746
+        X: =213
+        Y: =138
+        ZIndex: =11
 
