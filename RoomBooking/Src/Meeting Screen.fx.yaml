@@ -349,6 +349,12 @@
     ddStartTime_1 As dropdown:
         ChevronBackground: =RGBA(109, 49, 162, 1)
         Items: =TimeDD
+        OnChange: |-
+            =//false
+            Set(varStartTime,ddStartTime_1.Selected);
+        OnSelect: |-
+            =//false
+            Set(varStartTime,ddStartTime_1.Selected);
         Reset: |-
             =//false
             true
@@ -359,6 +365,13 @@
     ddEndTime_1 As dropdown:
         ChevronBackground: =RGBA(109, 49, 162, 1)
         Items: =TimeDD
+        OnChange: |-
+            =//false
+            Set(varEndTime,ddEndTime_1.Selected);
+        OnSelect: |-
+            =//false
+            
+            Set(varEndTime,ddEndTime_1.Selected);
         Reset: |-
             =//false
             true
