@@ -68,6 +68,9 @@
     "datasets": {
       "https://3bn1xh.sharepoint.com/sites/Room_Booking": {
         "dataSources": {
+          "Room Status": {
+            "tableName": "46a5e49e-0af5-4d79-bca9-b742cab7a8e6"
+          },
           "RoomRequestedByEmployee": {
             "tableName": "8ed4f231-fe7f-4dbd-b9b6-a73c7dd9da07"
           },
@@ -79,7 +82,8 @@
     },
     "dataSources": [
       "RoomRequestedByEmployee",
-      "RoomRequestedByEmployee  - Copy"
+      "RoomRequestedByEmployee  - Copy",
+      "Room Status"
     ],
     "dependencies": {},
     "dependents": [],
