@@ -1,5 +1,5 @@
 "'Main Screen' As screen":
-    Fill: =RGBA(102, 182, 227, 1)
+    Fill: =
     ImagePosition: =ImagePosition.Fill
 
     RectDullBackground As rectangle:

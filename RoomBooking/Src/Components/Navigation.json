@@ -687,7 +687,7 @@
       },
       "CurrentScreen"
     ],
-    "LastModifiedTimestamp": "638199389130546715",
+    "LastModifiedTimestamp": "638199849983602571",
     "Name": "Navigation",
     "Rules": [
       {
@@ -777,7 +777,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638199389130546715",
+  "LastModifiedTimestamp": "638199849983602571",
   "Name": "99b28883848845418997e0e1384ff668",
   "OverridableProperties": {},
   "Version": "638190383886042173"
