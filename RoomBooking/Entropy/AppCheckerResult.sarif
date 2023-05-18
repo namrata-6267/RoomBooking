@@ -8817,6 +8817,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'My Room_Request_1'.Dropdown1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'My Room_Request_1'.Dropdown1.OnSelect",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "My Room_Request_1",
+                "type": "'My Room_Request_1'.Dropdown1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-CollectDelegatableDataSource",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Meeting Screen'._showLoading"
                 }
               ],

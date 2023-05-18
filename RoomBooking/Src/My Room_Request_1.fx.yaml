@@ -83,14 +83,12 @@
     "Gallery5_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         DelayItemLoading: =true
         Height: =471
-        Items: |-
-            =//MyRoomColl
-            Filter(MyRoomColl,
-                   If( varDStatus.Value = "All" || IsBlank(varDStatus.Value),
-                    varDStatus.Value = "Pending",(Status.Value="Pending"),
-                    varDStatus.Value = "Approved",(Status.Value="Approved"),
-                    varDStatus.Value = "Completed", (Status.Value="Completed")
-                    ))
+        Items: |+
+            =MyRoomColl
+            
+            
+            
+            
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
@@ -236,7 +234,21 @@
             ["All","Approval","Pending","Completed"]
         OnChange: =Set(varDStatus,Dropdown1.SelectedText)
         OnSelect: |+
-            =false
+            =//false
+            
+            If(varDStatus.Value="All",
+            ClearCollect(MyRoomColl,Bookings));
+            
+            If(varDStatus.Value="Approved",
+            ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Approved")));
+            
+            If(varDStatus.Value="Completed",
+            ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Completed")));
+            
+            If(varDStatus.Value="Pending",
+            ClearCollect(MyRoomColl,Filter(Bookings,Status.Value = "Pending")));
+            
+            If(IsEmpty(MyRoomColl),UpdateContext({NoData : "No Record Found"}),UpdateContext({NoData : ""}))
             
         Width: =218
         X: =1026
