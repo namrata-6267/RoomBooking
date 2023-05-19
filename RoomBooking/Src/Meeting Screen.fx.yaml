@@ -260,7 +260,8 @@
         Fill: =RGBA(109, 49, 162, 1)
         Height: =45
         OnSelect: |+
-            =UpdateContext({ShowGallery:true});
+            =//UpdateContext({ShowGallery:true});
+            Set(FindRoom,false);
             
             
             Set(StartDateTime,DateAdd(_dateSelected,ddStartTime_1.Selected.Minutes,TimeUnit.Minutes));
@@ -340,8 +341,8 @@
         ShowScrollbar: =false
         TemplateSize: =312
         Visible: |-
-            =true
-            //FindRoom
+            =//true
+            FindRoom
         Width: =915
         WrapCount: =2
         X: =451

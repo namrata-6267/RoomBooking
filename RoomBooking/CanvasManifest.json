@@ -95,7 +95,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 2,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -133,7 +133,6 @@
     "LoginAsManager",
     "LogOut",
     "Meeting Screen",
-    "Meeting Screen2",
     "My Room_Request",
     "My Room_Request_2",
     "New Request",
