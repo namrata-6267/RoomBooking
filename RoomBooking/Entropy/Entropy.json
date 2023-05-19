@@ -273,7 +273,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/19/2023 10:15:24",
+  "HeaderLastSavedDateTimeUTC": "05/19/2023 10:41:13",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "24f74981-9290-4baa-b507-daa2983a4ef4": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/922bfc0bd2ea441ea5fa13a3aae04a43\"",
@@ -653,7 +653,7 @@
     "Button7_1": 199,
     "Button7_3": 134,
     "Button8_1": 43,
-    "Button8_2": 75,
+    "Button8_2": 72,
     "Button9": 180,
     "Circle1_1": 48,
     "Circle1_2": 80,
@@ -724,7 +724,7 @@
     "galleryTemplate20_4": 82,
     "galleryTemplate4": 185,
     "galleryTemplate5_1": 41,
-    "galleryTemplate5_2": 73,
+    "galleryTemplate5_2": 74,
     "galleryTemplate6_1": 45,
     "galleryTemplate6_2": 77,
     "galleryTemplate7": 92,
@@ -876,7 +876,7 @@
     "TextInput2_2": 17,
     "Title_DataCard6_1": 174,
     "Title1_1": 42,
-    "Title1_2": 74,
+    "Title1_2": 75,
     "Title16": 118,
     "Title16_1": 119,
     "Title16_10": 140,
@@ -892,7 +892,7 @@
     "Title9": 221,
     "Title9_1": 233,
     "WeekdayGallery1_1": 40,
-    "WeekdayGallery1_2": 72
+    "WeekdayGallery1_2": 73
   },
   "ResourcesJsonIndices": {
     "Image-16570": 1,

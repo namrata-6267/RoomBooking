@@ -357,6 +357,7 @@
             TimeValue(StartDateTime) >= TimeValue(LookUp(Bookings, SelectedRoom = Value).'Start Time', "[$-en-GB]hh:mm")
             &&
             TimeValue(EndDateTime) <= TimeValue(LookUp(Bookings, SelectedRoom = Value).'End Time', "[$-en-GB]hh:mm")
+            
             )
             ),
             "Name",
@@ -365,7 +366,7 @@
             );
         Text: ="Find Rooms"
         X: =754
-        Y: =245
+        Y: =219
         ZIndex: =22
 
     ddStartTime_2 As dropdown:
