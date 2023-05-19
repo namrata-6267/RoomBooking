@@ -351,12 +351,16 @@
             ClearCollect(
                 RoomDataSource,
                 AddColumns(
-                    AvailableRoomsEmails,
-                    "Name",
-                    LookUp(
-                        AllRooms,
-                        address = Value
-                    ).name
+            Filter(
+            AvailableRoomsEmails,
+            !(
+            TimeValue(StartDateTime) >= TimeValue(LookUp(Bookings, SelectedRoom = Value).'Start Time', "[$-en-GB]hh:mm")
+            &&
+            TimeValue(EndDateTime) <= TimeValue(LookUp(Bookings, SelectedRoom = Value).'End Time', "[$-en-GB]hh:mm")
+            )
+            ),
+            "Name",
+            LookUp(AllRooms, address = Value).name
                 )
             );
         Text: ="Find Rooms"
