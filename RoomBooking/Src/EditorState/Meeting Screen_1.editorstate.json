@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "Button14_3": {
+    "Button14_4": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -70,7 +70,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Button14_3",
+      "Name": "Button14_4",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -258,7 +258,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "Button27_3": {
+    "Button27_4": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "OnSelect",
@@ -281,14 +281,7 @@
         "PressedColor",
         "HoverColor",
         "DisplayMode",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Fill",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Fill",
         "DisabledFill",
         "PressedFill",
         "HoverFill",
@@ -321,7 +314,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Button27_3",
+      "Name": "Button27_4",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -509,7 +502,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "Button8_1": {
+    "Button8_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -579,7 +572,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Button8_1",
+      "Name": "Button8_2",
       "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -767,7 +760,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "Circle1_1": {
+    "Circle1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -797,7 +790,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%CircleEvents.ID%",
-      "Name": "Circle1_1",
+      "Name": "Circle1_2",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -890,7 +883,7 @@
       "StyleName": "primary3CircleStyle",
       "Type": "ControlInfo"
     },
-    "ddEndTime_1": {
+    "ddEndTime_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -968,7 +961,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "ddEndTime_1",
+      "Name": "ddEndTime_2",
       "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1197,7 +1190,7 @@
       "StyleName": "defaultDropdownStyle",
       "Type": "ControlInfo"
     },
-    "ddStartTime_1": {
+    "ddStartTime_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1275,7 +1268,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "ddStartTime_1",
+      "Name": "ddStartTime_2",
       "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1504,7 +1497,7 @@
       "StyleName": "defaultDropdownStyle",
       "Type": "ControlInfo"
     },
-    "dropdownCalendarSelection1_1": {
+    "dropdownCalendarSelection1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1590,7 +1583,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateCalendardropdownCalendarSelect.ID%",
-      "Name": "dropdownCalendarSelection1_1",
+      "Name": "dropdownCalendarSelection1_2",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1824,7 +1817,7 @@
       "StyleName": "defaultDropdownStyle",
       "Type": "ControlInfo"
     },
-    "galleryTemplate20_3": {
+    "galleryTemplate20_4": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "TemplateFill"
@@ -1838,7 +1831,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "galleryTemplate20_3",
+      "Name": "galleryTemplate20_4",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1851,7 +1844,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "galleryTemplate5_1": {
+    "galleryTemplate5_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "TemplateFill"
@@ -1865,7 +1858,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "galleryTemplate5_1",
+      "Name": "galleryTemplate5_2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1878,7 +1871,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "galleryTemplate6_1": {
+    "galleryTemplate6_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "TemplateFill"
@@ -1892,7 +1885,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "galleryTemplate6_1",
+      "Name": "galleryTemplate6_2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1905,7 +1898,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Header_9": {
+    "Header_11": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1952,7 +1945,7 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "Header_9",
+      "Name": "Header_11",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2000,7 +1993,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Icon8": {
+    "Icon8_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
@@ -2044,7 +2037,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Icon8",
+      "Name": "Icon8_1",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2172,7 +2165,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "iconCalendar1_1": {
+    "iconCalendar1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2218,7 +2211,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateTabletIconCalendar.ID%",
-      "Name": "iconCalendar1_1",
+      "Name": "iconCalendar1_2",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2356,7 +2349,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "iconNextMonth1_1": {
+    "iconNextMonth1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2407,7 +2400,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateTabletIconNextMonth.ID%",
-      "Name": "iconNextMonth1_1",
+      "Name": "iconNextMonth1_2",
       "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2570,7 +2563,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "iconPrevMonth1_1": {
+    "iconPrevMonth1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2621,7 +2614,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateTabletIconPrevMonth.ID%",
-      "Name": "iconPrevMonth1_1",
+      "Name": "iconPrevMonth1_2",
       "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2784,7 +2777,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "Label14_6": {
+    "Label14_7": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -2843,7 +2836,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Label14_6",
+      "Name": "Label14_7",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3046,7 +3039,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "Label15_2": {
+    "Label15_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -3105,7 +3098,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Label15_2",
+      "Name": "Label15_3",
       "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3308,7 +3301,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "Label16_4": {
+    "Label16_5": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -3375,7 +3368,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Label16_4",
+      "Name": "Label16_5",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3583,7 +3576,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "Label18_4": {
+    "Label18_5": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -3625,14 +3618,7 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -3650,7 +3636,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Label18_4",
+      "Name": "Label18_5",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3858,7 +3844,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "LblAppName1_1": {
+    "LblAppName1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -3909,7 +3895,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateTabletLblAppName.ID%",
-      "Name": "LblAppName1_1",
+      "Name": "LblAppName1_2",
       "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4072,7 +4058,7 @@
       "StyleName": "invertedBkgHeaderLabelStyle",
       "Type": "ControlInfo"
     },
-    "LblDateSelected1_1": {
+    "LblDateSelected1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -4123,7 +4109,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateLblDateSelected.ID%",
-      "Name": "LblDateSelected1_1",
+      "Name": "LblDateSelected1_2",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4286,7 +4272,7 @@
       "StyleName": "basicNoSizeLabelStyle",
       "Type": "ControlInfo"
     },
-    "LblMonthSelected1_1": {
+    "LblMonthSelected1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -4337,7 +4323,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateLblMonthSelected.ID%",
-      "Name": "LblMonthSelected1_1",
+      "Name": "LblMonthSelected1_2",
       "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4500,7 +4486,7 @@
       "StyleName": "basicNoSizeLabelStyle",
       "Type": "ControlInfo"
     },
-    "LblResetToday1_1": {
+    "LblResetToday1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -4550,7 +4536,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateTabletLblReset.ID%",
-      "Name": "LblResetToday1_1",
+      "Name": "LblResetToday1_2",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4708,7 +4694,7 @@
       "StyleName": "basicNoSizeWeightColorLabelStyle",
       "Type": "ControlInfo"
     },
-    "Meeting Screen": {
+    "Meeting Screen_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -4729,7 +4715,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Meeting Screen",
+      "Name": "Meeting Screen_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4782,7 +4768,7 @@
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     },
-    "MonthDayGallery1_1": {
+    "MonthDayGallery1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -4821,7 +4807,7 @@
         "ZIndex",
         "Visible"
       ],
-      "GalleryTemplateChildName": "galleryTemplate6_1",
+      "GalleryTemplateChildName": "galleryTemplate6_2",
       "HasDynamicProperties": false,
       "IsAutoGenerated": false,
       "IsComponentDefinition": false,
@@ -4831,7 +4817,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%MonthDayGallery.ID%",
-      "Name": "MonthDayGallery1_1",
+      "Name": "MonthDayGallery1_2",
       "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4979,7 +4965,7 @@
       "StyleName": "defaultGalleryStyle",
       "Type": "ControlInfo"
     },
-    "RectCalendarSeparator1_1": {
+    "RectCalendarSeparator1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -5005,7 +4991,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateTabletRectCalendarSep.ID%",
-      "Name": "RectCalendarSeparator1_1",
+      "Name": "RectCalendarSeparator1_2",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5078,7 +5064,7 @@
       "StyleName": "primary2RectangleStyle",
       "Type": "ControlInfo"
     },
-    "RectMeetingBkg1_1": {
+    "RectMeetingBkg1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -5105,7 +5091,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateTabletRectMeetingBkg.ID%",
-      "Name": "RectMeetingBkg1_1",
+      "Name": "RectMeetingBkg1_2",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5183,7 +5169,7 @@
       "StyleName": "grayRectangleStyle",
       "Type": "ControlInfo"
     },
-    "RectQuickActionBar1_1": {
+    "RectQuickActionBar1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -5209,7 +5195,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateTabletRectQuickActionBar.ID%",
-      "Name": "RectQuickActionBar1_1",
+      "Name": "RectQuickActionBar1_2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5282,7 +5268,7 @@
       "StyleName": "invertedBackgroundRectangleStyle",
       "Type": "ControlInfo"
     },
-    "RoomGallery": {
+    "RoomGallery_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -5341,7 +5327,7 @@
           "NameMapSourceSchema": "?"
         }
       ],
-      "GalleryTemplateChildName": "galleryTemplate20_3",
+      "GalleryTemplateChildName": "galleryTemplate20_4",
       "HasDynamicProperties": false,
       "IsAutoGenerated": false,
       "IsComponentDefinition": false,
@@ -5351,7 +5337,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "RoomGallery",
+      "Name": "RoomGallery_1",
       "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5494,7 +5480,7 @@
       "StyleName": "defaultGalleryStyle",
       "Type": "ControlInfo"
     },
-    "Subcircle1_1": {
+    "Subcircle1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -5524,7 +5510,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%SelectedCircle.ID%",
-      "Name": "Subcircle1_1",
+      "Name": "Subcircle1_2",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5617,7 +5603,7 @@
       "StyleName": "defaultCircleStyle",
       "Type": "ControlInfo"
     },
-    "Title1_1": {
+    "Title1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -5661,7 +5647,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%WeekdayLbl.ID%",
-      "Name": "Title1_1",
+      "Name": "Title1_2",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5824,7 +5810,7 @@
       "StyleName": "basicNoSizeLabelStyle",
       "Type": "ControlInfo"
     },
-    "Title2_1": {
+    "Title2_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -5834,7 +5820,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "If(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(255, 255, 255, 1), DateAdd(_firstDayInView, ThisItem.Value) = Today(), RGBA(47, 41, 43, 1), LblMonthSelected1_1.Color)",
+          "AutoRuleBindingString": "If(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(255, 255, 255, 1), DateAdd(_firstDayInView, ThisItem.Value) = Today(), RGBA(47, 41, 43, 1), LblMonthSelected1_2.Color)",
           "InvariantPropertyName": "Color",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -5894,7 +5880,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%MonthDayLbl.ID%",
-      "Name": "Title2_1",
+      "Name": "Title2_2",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6117,7 +6103,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "WeekdayGallery1_1": {
+    "WeekdayGallery1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -6155,7 +6141,7 @@
         "ZIndex",
         "Visible"
       ],
-      "GalleryTemplateChildName": "galleryTemplate5_1",
+      "GalleryTemplateChildName": "galleryTemplate5_2",
       "HasDynamicProperties": false,
       "IsAutoGenerated": false,
       "IsComponentDefinition": false,
@@ -6165,7 +6151,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%WeekdayGallery.ID%",
-      "Name": "WeekdayGallery1_1",
+      "Name": "WeekdayGallery1_2",
       "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6309,5 +6295,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Meeting Screen"
+  "TopParentName": "Meeting Screen_1"
 }
