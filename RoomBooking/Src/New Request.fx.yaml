@@ -253,7 +253,7 @@
                 ZIndex: =4
 
             DataCardValue2_1 As text:
-                Default: =RoomGallerys.Selected.Name
+                Default: =RoomGallery.Selected.Name
                 X: =27
                 Y: =87
                 ZIndex: =6
