@@ -261,7 +261,7 @@
         Height: =45
         OnSelect: |+
             =//UpdateContext({ShowGallery:true});
-            Set(FindRoom,false);
+            Set(FindRoom,true);
             
             
             Set(StartDateTime,DateAdd(_dateSelected,ddStartTime_1.Selected.Minutes,TimeUnit.Minutes));
