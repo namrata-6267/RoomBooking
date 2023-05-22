@@ -1,0 +1,24 @@
+"Screen1 As screen.'tabletLayout_Success_ver3.0'":
+    OnVisible: =Set(SelectedRoomEmail,RoomGallery.Selected.Value)
+
+    Label3 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =59
+        Size: =30
+        Text: ="Booking Confirmed"
+        Width: =517
+        X: =428
+        Y: =148
+        ZIndex: =1
+
+    Label4 As label:
+        Align: =Align.Center
+        Height: =56
+        Size: =20
+        Text: =RoomGallery.Selected.Name
+        Width: =204
+        X: =584
+        Y: =287
+        ZIndex: =2
+
