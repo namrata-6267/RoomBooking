@@ -460,67 +460,6 @@
             OnSelect: |-
                 =//Select(Parent)
                 
-                ClearCollect(
-                    AllRooms,
-                    Office365Outlook.GetRoomsV2().value
-                );
-                Set(
-                    AllRoomsAddress,
-                    Concat(
-                        AllRooms,
-                        address & ";"
-                    )
-                );
-                ClearCollect(
-                    FreeSlots,
-                    Office365Outlook.FindMeetingTimesV2(
-                        {
-                            RequiredAttendees: AllRoomsAddress,
-                            IsOrganizerOptional: true,
-                            Start: StartDateTimeUTC,
-                            End: EndDateTimeUTC,
-                            MeetingDuration: DateDiff(
-                                StartDateTime,
-                                EndDateTime,
-                                TimeUnit.Minutes
-                            )
-                        }
-                    )
-                );
-                ClearCollect(
-                    _meetingTimeSuggestion,
-                    First(FreeSlots).meetingTimeSuggestions
-                );
-                ClearCollect(
-                    _AttendeeAvailablity,
-                    Filter(
-                        First(_meetingTimeSuggestion).attendeeAvailability,
-                        availability = "free"
-                    )
-                );
-                ClearCollect(
-                    AvailableRoomsEmails,
-                    ForAll(
-                        _AttendeeAvailablity,
-                        attendee.emailAddress.address
-                    )
-                );
-                ClearCollect(
-                    RoomDataSource,
-                    AddColumns(
-                        AvailableRoomsEmails,
-                        "Name",
-                        LookUp(
-                            AllRooms,
-                           address = Value
-                        ).name
-                                
-                    )
-                );
-                
-                
-                
-                
                 
                 Navigate('New Request')
             Text: ="Book"
