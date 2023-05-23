@@ -261,6 +261,8 @@
         Height: =45
         OnSelect: |
             =//UpdateContext({ShowGallery:true});
+            
+            
             Set(
                 FindRoom,
                 true
@@ -355,8 +357,9 @@
                     "Name",
                     LookUp(
                         AllRooms,
-                        address = Value
+                       address = Value
                     ).name
+                            
                 )
             );
         Text: ="Find Rooms"
@@ -456,7 +459,6 @@
             Fill: =RGBA(168, 0, 107, 0.53)
             OnSelect: |-
                 =//Select(Parent)
-                
                 
                 Navigate('New Request')
             Text: ="Book"
