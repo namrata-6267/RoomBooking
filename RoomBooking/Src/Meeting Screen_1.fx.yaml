@@ -259,69 +259,30 @@
     Button8_2 As button:
         Fill: =RGBA(109, 49, 162, 1)
         Height: =45
-        OnSelect: |
-            =//UpdateContext({ShowGallery:true});
-            Set(
-                FindRoom,
-                true
-            );
-            Set(
-                StartDateTime,
-                DateAdd(
-                    _dateSelected,
-                    ddStartTime_2.Selected.Minutes,
-                    TimeUnit.Minutes
-                )
-            );
-            Set(
-                EndDateTime,
-                DateAdd(
-                    _dateSelected,
-                    ddEndTime_2.Selected.Minutes,
-                    TimeUnit.Minutes
-                )
-            );
-            Set(
-                StartDateTimeUTC,
-                Text(
-                    DateAdd(
-                        StartDateTime,
-                        TimeZoneOffset(),
-                        TimeUnit.Minutes
-                    ),
-                    "[$-en-GB]yyyy-mm-ddThh:mm"
-                ) & ":00.000z"
-            );
+        OnSelect: |-
+            =Set(FindRoom, true);
+            Set(StartDateTime, DateAdd(_dateSelected, ddStartTime_2.Selected.Minutes, TimeUnit.Minutes));
+            Set(EndDateTime, DateAdd(_dateSelected, ddEndTime_2.Selected.Minutes, TimeUnit.Minutes));
+            Set(StartDateTimeUTC, Text(DateAdd(StartDateTime, TimeZoneOffset(), TimeUnit.Minutes), "[$-en-GB]yyyy-mm-ddThh:mm") & ":00.000z");
+            Set(EndDateTimeUTC, Text(DateAdd(EndDateTime, TimeZoneOffset(), TimeUnit.Minutes), "[$-en-GB]yyyy-mm-ddThh:mm") & ":00.000z");
             
-            Set(
-                EndDateTimeUTC,
-                Text(
-                    DateAdd(
-                        EndDateTime,
-                        TimeZoneOffset(),
-                        TimeUnit.Minutes
-                    ),
-                    "[$-en-GB]yyyy-mm-ddThh:mm"
-                ) & ":00.000z"
-            );
-            ClearCollect(
-                AllRooms,
-                Office365Outlook.GetRoomsV2().value
-            );
+            Set(AllRoomsAddress, Concat(AllRooms, address & ";"));
             
+            ClearCollect(AvailableRoomsEmails, ForAll(_AttendeeAvailablity, attendee.emailAddress.address));
             ClearCollect(
-                RoomDataSource,
-                
+            RoomDataSource,
+            
             Filter(
             EmployeesData,
             !(
-            StartDateTime >= TimeValue(LookUp(Bookings,SelectedRoom = Value('Start Time' ), "[$-en-GB]hh:mm")
+            StartDateTime >= TimeValue(LookUp(Bookings, SelectedRoom = Title).'Start Time', "hh:mm")
             &&
-            EndDateTime <= TimeValue(LookUp(Bookings, SelectedRoom = Value('End Time'), "[$-en-GB]hh:mm")
+            EndDateTime <= TimeValue(LookUp(Bookings, SelectedRoom = Title).'End Time', "hh:mm")
             )
-            ));
+            
+            );
         Text: ="Find Rooms"
-        X: =793
+        X: =676
         Y: =219
         ZIndex: =22
 
