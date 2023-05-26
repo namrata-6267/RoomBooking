@@ -280,7 +280,7 @@
             EndDateTime <= TimeValue(LookUp(Bookings, SelectedRoom = Title).'End Time', "hh:mm")
             )
             
-            );
+            ))
         Text: ="Find Rooms"
         X: =676
         Y: =219
